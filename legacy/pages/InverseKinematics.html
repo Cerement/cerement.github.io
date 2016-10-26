@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A graduate student who wants to be a game programmer.">
+    <meta name="author" content="Naga Chiang">
+
+    <title>Inverse Kinematics｜Cheng-Han "Naga" Chiang</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Social Buttons CSS -->
+    <link href="../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+    <!--[if IE]><link rel="shortcut icon" href="../favicon.ico"><![endif]-->
+
+    <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
+    <link rel="apple-touch-icon-precomposed" href="../favicon.ico">
+
+    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header"><b>Inverse Kinematics</b></h1>
+
+                        <div class="text-center">
+                            <iframe width="640" height="480" src="https://www.youtube.com/embed/rJnuneHwlmk?rel=0" frameborder="0" allowfullscreen></iframe></br>
+                            <h5>Inverse Kinematics</h5>
+                        </div>
+
+                        <!-- Overview -->
+                        <h2><b>Overview</b></h2>
+                        <hr/>
+                        <p>
+                            In contract to Forward Kinematics, which computes the end-effectors through the parameters of segments, <a href="https://en.wikipedia.org/wiki/Inverse_kinematics" target="_blank">Inverse kinematics</a> would derive approximate parameters for segments from a decided end-effector.
+                        </p>
+                        <p>
+                            This project used a framework developed with C++ and OpenGL by <a href="http://gpl.cs.nctu.edu.tw/" target="_blank">GPLab</a>, NCTU. 
+                        </p>
+                        <br/>
+
+                        <!-- Inverse-Jacobian Method -->
+                        <h2><b>Inverse-Jacobian Method</b></h2>
+                        <hr/>
+                        <p>
+                            Inverse-Jacobian method is a rather simple and effective way of implementing Inverse Kinematics. It models the forward kinematics equation using a Taylor series expansion, which is simpler to invert and solve than the original system.
+                        </p>
+                        <p>
+                            This technique computes an estimate set of parameters of segements to minimize the error to end-effector. It computes iteratively to adjust until the solution set of parameters is close enough to the end-effector. Applying this method may result in very rough estimate of the decided end-effector.
+                        </p>
+                        <p>
+                            Here I set the computing step of IK to 30.0, and error factor is 0.0001. The big step is to make the process more real-time, while the error factor is a reasonable value for finding the good enough result.
+                        </p>
+                        <br/>
+
+                        <!-- Result -->
+                        <h2><b>Result</b></h2>
+                        <hr/>
+                        <p>
+                            Although the performance is acceptable, the poses this method computed are not spontaneous enough. In this case, I used a human skeleton, but some of the poses with the limbs twisting to weird angle to match the end-effector were not normal at all. Therefore, for more spontaneous results, it needs some improvements, such as feature-based IK or style-based IK.
+                        </p></br>
+                        <div class="text-center">
+                            <iframe width="640" height="480" src="https://www.youtube.com/embed/rJnuneHwlmk?rel=0" frameborder="0" allowfullscreen></iframe></br>
+                            <h5>Inverse Kinematics</h5>
+                        </div>
+                        <br/>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
