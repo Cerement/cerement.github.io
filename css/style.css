@@ -601,7 +601,7 @@ b, strong { font-weight: bold; }
 
 	#header h1 {
 		font-size: 36px;
-		line-height: 36px;
+		line-height: 20px;
 		font-weight: bold;
 	}
 
@@ -736,8 +736,15 @@ b, strong { font-weight: bold; }
 	---------------------------------------------------*/
 	
 	#works .item {
-		margin-bottom: 40px;
-		padding: 5px;
+		/*margin-bottom: 40px;*/
+		padding: 10px;
+	}
+
+	.area
+	{
+		background-color: white;
+		padding-bottom: 10px;
+		margin-bottom: 50px;
 	}
 
 	#works .item:hover { background-color: #e0e0e0; }
@@ -771,8 +778,8 @@ b, strong { font-weight: bold; }
 	#works .item span.category {
 		color: #aaa;
 		display: block;
-		font-size: 12px;
-		line-height: 14px;
+		font-size: 14px;
+		line-height: 16px;
 		margin-bottom: 10px;
 	}
 

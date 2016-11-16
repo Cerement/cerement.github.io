@@ -31,6 +31,12 @@
 
 	<!-- Font-Awesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Loader -->
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+
+	<!-- Overlay -->
+	<link rel="stylesheet" type="text/css" href="css/overlay.css">
 		
 	<!--[if lt IE 8]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
@@ -49,6 +55,22 @@
 </head>
 
 <body>
+
+	<!-- Loading effect -->
+	<div id="loader">
+		<div id="ajaxloader3">
+		  <div class="outer"></div>
+		  <div class="inner"></div>
+		</div>
+	</div>
+
+	<!-- Overlay -->
+	<div id="overlay" align="center"></div>
+	<div id="pagecontainer">
+	    <!-- <img id="close" src="http://images.rodale.com/acc/torchers/site/close.png" style="float: right"/> -->
+	    <iframe name="project" id="page" frameBorder="0" seamless></iframe>
+	</div>
+
 
 
 	<!-- Header - Half Logo
@@ -115,145 +137,154 @@
 	================================================== -->
 	<section id="works" class="">
 		<div class="container">
-			
-				<div class="desktop-3 columns"><h2>Games</h2></div>
-				<div class="clear"></div>
-			
-				<a href="https://nagachiang.itch.io/through-galaxies" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/ThroughGalaxies.gif"/>
-
-							<h3>Through Galaxies</h3>							
-							<span class="category">Shoot'em-up, Arcade, Bullet-hell, Vertical-scroller</span>
-							<span class="category"><i class="fa fa-android fa-2x"></i> <i class="fa fa-html5 fa-2x"></i></span>
-							<span class="category">2016</span>
-							
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
-
 				
-				<a href="legacy/pages/RobotEscaper.html" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/RobotEscaper.gif"/>
+				<div class="area">
+					<div class="desktop-3 columns"><h2>Games</h2></div>
+					<div class="clear"></div>
+				
+					<a href="https://nagachiang.itch.io/through-galaxies" target="_blank" class="permalink">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/ThroughGalaxies.gif"/>
 
-							<h3>Robot Escaper</h3>
-							<span class="category">Infinite-runner, Action, Horizontal-scroller</span>
-							<span class="category">Unity Web Player</span>
-							<span class="category">2014</span>
-							
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+								<h3>Through Galaxies</h3>							
+								<span class="category">Shoot'em-up, Arcade, Bullet-hell, Vertical-scroller</span>
+								<span class="category"><i class="fa fa-android fa-2x"></i> <i class="fa fa-html5 fa-2x"></i></span>
+								<span class="category">2016</span>
+								
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
+					
+					<a href="legacy/pages/RobotEscaper.html" target="_blank" class="permalink open-overlay">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/RobotEscaper.gif"/>
 
-				<div class="clear hide-under-tablet"></div>
+								<h3>Robot Escaper</h3>
+								<span class="category">Infinite-runner, Action, Horizontal-scroller</span>
+								<span class="category">Unity Web Player</span>
+								<span class="category">2014</span>
+								
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-				<div class="desktop-3 columns"><h2>Game Mods</h2></div>
-				<div class="clear"></div>
+					<div class="clear hide-under-tablet"></div>
+				</div>
 
-				<a href="legacy/pages/PixelDungeonLegends.html" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/PixelDungeonLegends.png"/>
+				<div class="area">
+					<div class="desktop-3 columns"><h2>Game Mods</h2></div>
+					<div class="clear"></div>
 
-							<h3>Pixel Dungeon: Legends</h3>
-							<span class="category">Rougelike, Pixel-art, Turn-based</span>
-							<span class="category"><i class="fa fa-android fa-2x"></i></span>
-							<span class="category">2015</span>
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+					<a href="legacy/pages/PixelDungeonLegends.html" target="_blank" class="permalink open-overlay">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/PixelDungeonLegends.png"/>
 
-				<div class="clear hide-under-tablet"></div>
+								<h3>Pixel Dungeon: Legends</h3>
+								<span class="category">Rougelike, Pixel-art, Turn-based</span>
+								<span class="category"><i class="fa fa-android fa-2x"></i></span>
+								<span class="category">2015</span>
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-				<div class="desktop-3 columns"><h2>AI</h2></div>
-				<div class="clear"></div>
+					<div class="clear hide-under-tablet"></div>
+				</div>
 
-				<a href="https://github.com/NagaChiang/MCTSGladiator" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/MCTSGladiator.gif" />
+				<div class="area">
+					<div class="desktop-3 columns"><h2>AI</h2></div>
+					<div class="clear"></div>
 
-							<h3>MCTS Gladiator</h3>
-							<span class="category">A StarCraft bot applied Monte-Carlo tree search for tactical decision-making.</span>
-							<span class="category">2016</span>
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+					<a href="https://github.com/NagaChiang/MCTSGladiator" target="_blank" class="permalink">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/MCTSGladiator.gif" />
 
-				<a href="legacy/pages/Fib2584AI.html" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/Fib2584.gif" />
+								<h3>MCTS Gladiator</h3>
+								<span class="category">A StarCraft bot applied Monte-Carlo tree search for tactical decision-making.</span>
+								<span class="category">2016</span>
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-							<h3>Fib2584 AI</h3>
-							<span class="category">An AI plays Fib2584, a variation of the well-known game 2048, with temporal difference learning.</span>
-							<span class="category">2014</span>
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+					<a href="legacy/pages/Fib2584AI.html" target="_blank" class="permalink open-overlay">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/Fib2584.gif" />
 
-				<a href="legacy/pages/Pacman.html" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/Pacman.gif" />
+								<h3>Fib2584 AI</h3>
+								<span class="category">An AI plays Fib2584, a variation of the well-known game 2048, with temporal difference learning.</span>
+								<span class="category">2014</span>
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-							<h3>The Pacman Projects</h3>
-							<span class="category">Forked from the projects originally developed by UC Berkeley CS188 to implement some basic AI techniques, such as minimax and alpha-beta pruning.</span>
-							<span class="category">2014</span>
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+					<a href="legacy/pages/Pacman.html" target="_blank" class="permalink open-overlay">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/Pacman.gif" />
 
-				<div class="clear hide-under-tablet"></div>
+								<h3>The Pacman Projects</h3>
+								<span class="category">Forked from the projects originally developed by UC Berkeley CS188 to implement some basic AI techniques, such as minimax and alpha-beta pruning.</span>
+								<span class="category">2014</span>
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-				<div class="desktop-3 columns"><h2>Physics</h2></div>
-				<div class="clear"></div>
+					<div class="clear hide-under-tablet"></div>
+				</div>
 
-				<a href="legacy/pages/SoftBodySimulation.html" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/SoftBodySimulation.gif" />
+				<div class="area">
+					<div class="desktop-3 columns"><h2>Physics</h2></div>
+					<div class="clear"></div>
 
-							<h3>Soft Body Simulation</h3>
-							<span class="category">The cube is constructed by a set of particles, which are connected with 3 kinds of springs.</span>
-							<span class="category">2014</span>
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+					<a href="legacy/pages/SoftBodySimulation.html" target="_blank" class="permalink open-overlay">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/SoftBodySimulation.gif" />
 
-				<div class="clear hide-under-tablet"></div>
+								<h3>Soft Body Simulation</h3>
+								<span class="category">The cube is constructed by a set of particles, which are connected with 3 kinds of springs.</span>
+								<span class="category">2014</span>
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-				<div class="desktop-3 columns"><h2>Animations</h2></div>
-				<div class="clear"></div>
+					<div class="clear hide-under-tablet"></div>
+				</div>
 
-				<a href="legacy/pages/ForwardKinematics.html" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/FK.gif" />
+				<div class="area">
+					<div class="desktop-3 columns"><h2>Animations</h2></div>
+					<div class="clear"></div>
+				
+					<a href="legacy/pages/ForwardKinematics.html" target="_blank" class="permalink open-overlay">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/FK.gif" />
 
-							<h3>Forward Kinematics</h3>
-							<span class="category">Forward kinematics is the use of kinematic equations of a skeleton to derive the end-effector from the values of joints.</span>
-							<span class="category">2014</span>
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+								<h3>Forward Kinematics</h3>
+								<span class="category">Forward kinematics is the use of kinematic equations of a skeleton to derive the end-effector from the values of joints.</span>
+								<span class="category">2014</span>
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-				<a href="legacy/pages/InverseKinematics.html" target="_blank" class="permalink">
-					<div class="desktop-4 tablet-6 columns">
-						<div class="item">
-							<img src="images/IK.gif" />
+					<a href="legacy/pages/InverseKinematics.html" target="_blank" class="permalink open-overlay">
+						<div class="desktop-4 tablet-6 columns">
+							<div class="item">
+								<img src="images/IK.gif" />
 
-							<h3>Inverse Kinematics</h3>
-							<span class="category">Inverse kinematics would derive approximate parameters for segments from a decided end-effector.</span>
-							<span class="category">2014</span>
-						</div><!-- // .item -->
-					</div><!-- // .desktop-4 -->
-				</a>
+								<h3>Inverse Kinematics</h3>
+								<span class="category">Inverse kinematics would derive approximate parameters for segments from a decided end-effector.</span>
+								<span class="category">2014</span>
+							</div><!-- // .item -->
+						</div><!-- // .desktop-4 -->
+					</a>
 
-				<div class="clear hide-under-tablet"></div>
+					<div class="clear hide-under-tablet"></div>
+				</div>
 
 		</div><!-- // .container -->
 	</section><!-- // section#works -->
@@ -275,7 +306,10 @@
 			<div class="clear"></div>
 
 			<div class="desktop-12 columns" style="text-align: center; color: #ccc;">
-				<p>Template designed by <a href="http://www.typebig.com">Typebig</a></p>
+				<p>
+					Forked from the template designed by <a href="http://www.typebig.com" target="_blank">Typebig</a><br/>
+					Loading animation designed by <a href="http://codepen.io/xixao/" target="_blank">Steve Melcher</a>
+				</p>
 			</div><!-- // .desktop-3 -->
 
 			<div class="clear"></div>
@@ -301,6 +335,12 @@
 	<!-- Social buttons -->
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="js/social-buttons.js"></script>
+
+	<!-- Loader -->
+	<script src="js/loader.js"></script>
+
+	<!-- Overlay -->
+	<script src="js/overlay.js"></script>
 
 <!-- End Document
 ================================================== -->
