@@ -50,10 +50,6 @@ body {
 }
 
 
-
-
-
-
 /*--------------------------------------------------------------------------
 	2. Typography
 --------------------------------------------------------------------------*/
@@ -497,6 +493,8 @@ b, strong { font-weight: bold; }
 	ul#nav > li.hover {
 		background: #111;
 		margin: 0;
+		-webkit-animation: pulse 1s;
+    	animation: pulse 1s;
 	}
 
 		ul#nav > li:hover a,
@@ -747,7 +745,11 @@ b, strong { font-weight: bold; }
 		margin-bottom: 50px;
 	}
 
-	#works .item:hover { background-color: #e0e0e0; }
+	#works .item:hover {
+		background-color: #e0e0e0;
+		-webkit-animation: pulse 1s;
+ 		animation: pulse 1s;
+	}
 
 		#works .item h3 {
 			color: #555;
@@ -1842,6 +1844,8 @@ b, strong { font-weight: bold; }
 }
 .social i:hover {
   margin-top: -1px;
+  -webkit-animation: tada 1s infinite;
+  animation: tada 1s infinite;
 }
 .social i#twitter:hover {
   color: #77DDF6;
