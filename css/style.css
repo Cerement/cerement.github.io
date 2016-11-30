@@ -493,8 +493,6 @@ b, strong { font-weight: bold; }
 	ul#nav > li.hover {
 		background: #111;
 		margin: 0;
-		-webkit-animation: pulse 1s;
-    	animation: pulse 1s;
 	}
 
 		ul#nav > li:hover a,
@@ -747,8 +745,6 @@ b, strong { font-weight: bold; }
 
 	#works .item:hover {
 		background-color: #e0e0e0;
-		-webkit-animation: pulse 1s;
- 		animation: pulse 1s;
 	}
 
 		#works .item h3 {
