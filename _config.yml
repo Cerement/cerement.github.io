@@ -16,7 +16,7 @@ description              : "Naga Chiang's devblog about game developing, especia
 url                      : "https://nagachiang.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "nagachiang/nagachiang.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "assets/images/chikorita.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/chikorita.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Naga Chiang"
-  avatar           : "https://raw.githubusercontent.com/nagachiang/nagachiang.github.io/master/images/chikorita.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://raw.githubusercontent.com/nagachiang/nagachiang.github.io/master/assets/images/chikorita.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Game Developer. A bold dungeon crawler loving roguelikes and roguelites."
   location         : "Taiwan"
   email            : "chchiang.cs03g@g2.nctu.edu.tw"
