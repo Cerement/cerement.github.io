@@ -35,17 +35,18 @@
     {% endif %}
 
     <div class="page__meta">
-      {% if site.category_archive.type and page.categories[0] %}
+      {% if site.category_archive.type and post.categories[0] %}
+        {% page = post %}
         {% include category-list-excerpt.html %}
       {% endif %}
 
-      {% if page.last_modified_at %}
-        <span class="page__date"><time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time></span>
-      {% elsif page.date %}
-        <span class="page__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></span>
+      {% if post.last_modified_at %}
+        <span class="page__date"><time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: "%Y-%m-%d" }}</time></span>
+      {% elsif post.date %}
+        <span class="page__date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
       {% endif %}
     </div>
-          
+
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
