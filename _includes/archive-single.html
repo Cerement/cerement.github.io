@@ -36,7 +36,6 @@
 
     <div class="page__meta">
       {% if site.category_archive.type and post.categories[0] %}
-        {% page = post %}
         {% include category-list-excerpt.html %}
       {% endif %}
 
@@ -47,6 +46,8 @@
       {% endif %}
     </div>
 
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    <!--
+    % if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    -->
   </article>
 </div>
