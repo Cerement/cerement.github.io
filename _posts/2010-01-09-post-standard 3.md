@@ -1,8 +1,8 @@
 ---
-title: "Post: Standard"
+title: "A new way to solve problem"
 excerpt_separator: "<!--more-->"
 categories:
-  - Post Formats
+  - Animation
 tags:
   - Post Formats
   - readability

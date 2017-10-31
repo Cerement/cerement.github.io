@@ -1,8 +1,8 @@
 ---
-title: "Post: Standard"
+title: "Go away, man"
 excerpt_separator: "<!--more-->"
 categories:
-  - Post Formats
+  - Unity
 tags:
   - Post Formats
   - readability
