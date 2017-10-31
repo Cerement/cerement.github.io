@@ -31,14 +31,14 @@ layout: default
           {% if page.read_time %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>{% endif %}
 
           <div class="page__meta">
-            {% if site.category_archive.type and page.categories[0] %}
-              {% include category-list-excerpt.html %}
+            {% if page.last_modified_at %}
+              <span class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time></span>
+            {% elsif page.date %}
+              <span class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></span>
             {% endif %}
 
-            {% if page.last_modified_at %}
-              <span class="page__date"><time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time></span>
-            {% elsif page.date %}
-              <span class="page__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></span>
+            {% if site.category_archive.type and page.categories[0] %}
+              {% include category-list-excerpt.html %}
             {% endif %}
           </div>
         </header>
