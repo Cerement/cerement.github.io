@@ -33,6 +33,19 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
+
+    <div class="page__meta">
+      {% if site.category_archive.type and page.categories[0] %}
+        {% include category-list-excerpt.html %}
+      {% endif %}
+
+      {% if page.last_modified_at %}
+        <span class="page__date"><time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time></span>
+      {% elsif page.date %}
+        <span class="page__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></span>
+      {% endif %}
+    </div>
+          
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
