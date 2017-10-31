@@ -34,18 +34,6 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-    <div class="page__meta">
-      {% if site.category_archive.type and post.categories[0] %}
-        {% include category-list-excerpt.html %}
-      {% endif %}
-
-      {% if post.last_modified_at %}
-        <span class="page__date"><time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: "%Y-%m-%d" }}</time></span>
-      {% elsif post.date %}
-        <span class="page__date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      {% endif %}
-    </div>
-
     <!--
     % if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
     -->
