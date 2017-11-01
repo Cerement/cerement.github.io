@@ -66,25 +66,27 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-  og_image               : "https://raw.githubusercontent.com/nagachiang/nagachiang.github.io/master/assets/images/chikorita.jpg" # Open Graph/Twitter default site image
+  og_image               : "/assets/images/chikorita.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  name                   : Naga Chiang # If the user or organization name differs from the site's name
   links                  : # An array of links to social media profiles
+                          - "https://www.linkedin.com/in/chchiangnaga"
+                          - "https://twitter.com/nagachiang"
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
-  google                 : 134752117
-  tracking_id            : 134752117
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  google                 :
+    tracking_id            : "UA-88112502-1"
 
 
 # Site Author
 author:
   name             : "Naga Chiang"
-  avatar           : "https://raw.githubusercontent.com/nagachiang/nagachiang.github.io/master/assets/images/chikorita.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/chikorita.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Game Developer. A bold dungeon crawler loving roguelikes and roguelites."
   location         : "Taiwan"
   email            : "chchiang.cs03g@g2.nctu.edu.tw"
