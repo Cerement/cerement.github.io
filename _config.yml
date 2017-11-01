@@ -17,7 +17,7 @@ url                      : "https://nagachiang.github.io" # the base hostname & 
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "nagachiang/nagachiang.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/chikorita.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-breadcrumbs              : true # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
@@ -66,7 +66,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-  og_image               : "/assets/images/chikorita.jpg" # Open Graph/Twitter default site image
+og_image                 : "/assets/images/chikorita.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
