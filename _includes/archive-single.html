@@ -25,7 +25,8 @@
       </div>
     {% endif %}
 
-    <small><p>
+    <small><div>
+      <div style="padding-top:1em;"></div>
       <span class="page__date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
 
       {% if site.category_archive.type and post.categories[0] %}
@@ -37,7 +38,7 @@
       {% else %}
         <strong><a style="padding-left:0.5em;" href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a></strong>
       {% endif %}
-    </p></small>
+    </div></small>
 
   </article>
 </div>

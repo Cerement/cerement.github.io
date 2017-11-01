@@ -15,7 +15,6 @@
 
   <span class="page__taxonomy" style="padding-left:0.3em;">
     <span itemprop="keywords">
-    <div style="padding-top:1em;"></div>
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '#' %}
       {% capture category_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
