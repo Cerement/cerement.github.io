@@ -256,6 +256,7 @@ defaults:
       related: false
       toc: true
       toc_label: "Table of Contents"
+      breadcrumbs: true
 
   # _pages
   - scope:
