@@ -16,7 +16,7 @@ header:
 
 ![](/assets/images/RobotEscaper_0.jpg)
 
-<p style="text-align: center;">[Click here to play](https://nagachiang.github.io/RobotEscaper)</p>
+<p style="text-align: center;"><a href="https://nagachiang.github.io/RobotEscaper" target="_blank">Click here to play</a></p>
 
 # Overview
 
