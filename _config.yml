@@ -257,7 +257,6 @@ defaults:
       breadcrumbs: true
       toc: true
       toc_label: "Table of Contents"
-      toc_icon: "file-text" # file-text
 
   # _pages
   - scope:
@@ -267,3 +266,5 @@ defaults:
       layout: single
       author_profile: true
       breadcrumbs: false
+      toc: true
+      toc_label: "Table of Contents"
