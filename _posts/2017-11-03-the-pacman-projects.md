@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Pacman Projects"
 date: 2017-11-03T16:52:56+08:00
 categories:
@@ -12,13 +12,13 @@ header:
 ---
 
 <p style="text-align: center;"><img src="/assets/images/pacman_game.gif" /></p>
-<p style="text-align: center;">Gif made by [UC Berkeley CS188](http://ai.berkeley.edu/project_overview.html)</p>
+<p style="text-align: center;">Gif made by <a href="http://ai.berkeley.edu/project_overview.html" target="_blank">UC Berkeley CS188</a></p>
 
 ## Overview
 
 [The Pacman Projects](http://ai.berkeley.edu/project_overview.html) were originally developed with Python 2.7 by UC Berkeley CS188, which were designed for students to practice the foundational AI concepts, such as informed state-space search, probabilistic inference, and reinforcement learning.
 
-As a TA of "Introduction to Artificial Intelligence" in spring 2015, I googled these materials and found it interesting for teaching, so I suggested applying these to our course. However, we didn't use the whole projects. To match the contents in our course, we just chose some of them to modify, and handed them out as assignments.
+As a TA of "Introduction to Artificial Intelligence" in spring 2015 and 2016, I googled these materials and found it interesting for teaching, so I suggested applying these to our course. However, we didn't use the whole projects. To match the contents in our course, we just chose some of them to modify, and handed them out as assignments.
 
 In addition, we also held a PacmanCTF Tournament using the special version of Pacman modified by [Po-Hao Huang](https://github.com/Po-haoHuang) and me. All students from this course had to participate as teams. The tournament turned out successfully like an exciting esports competition when the top 8 matched up in class.
 
@@ -35,15 +35,19 @@ All the assignments in this course are listed below. For more information, click
 ### Project 01: Rule-Based System
 
 - GoEastAgent
+
 ![](/assets/images/Pacman_P1-1.jpg)
 
 - CleanerAgent
+
 ![](/assets/images/Pacman_P1-2.jpg)
 
 - FroggerAgent
+
 ![](/assets/images/Pacman_P1-3.jpg)
 
 - SnakeAgent
+
 ![](/assets/images/Pacman_P1-4.jpg)
 
 ### Project 02: Search
@@ -96,8 +100,8 @@ A new version of Pacman mod made by [Po-Hao Huang](https://github.com/Po-haoHuan
 - Environment: Intel i5-430M (2.26GHz, 3MB L3 cache)
 - Time limit for initialization: >15 sec, lose
 - Time limit for action
-	- >1 sec: Warning
-	- >3 sec: Lose
+	- \>1 sec: Warning
+	- \>3 sec: Lose
 	- 3 Warnings: Lose
 - If any AI crashes or returns an invalid move, that team loses
 - No multi-threading
