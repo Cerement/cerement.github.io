@@ -10,14 +10,15 @@ tags:
 - Horizontal Scrolling
 - Platformer
 header:
- teaser: /assets/images/RobotEscaper_0.jpg
- og_image: /assets/images/RobotEscaper_0.jpg
+ teaser: /assets/images/RobotEscaper.gif
+ og_image: /assets/images/RobotEscaper.gif
 ---
 
-![](/assets/images/RobotEscaper_0.jpg)
-[Click here to play](https://nagachiang.github.io/RobotEscaper)
+<p style="text-align: center;"><img src="/assets/images/RobotEscaper.gif" /></p>
 
-# Overview
+<p style="text-align: center;"><a href="https://nagachiang.github.io/RobotEscaper" target="_blank">Click here to play</a></p>
+
+## Overview
 
 Robot Escaper is an endless running game developed with Unity.
 
@@ -25,13 +26,17 @@ This game features in simple control. All the player needs to do is jumping and 
 
 It's my first game using Unity. I followed the tutorials on the Unity official site and polished it in my spare time, which took me a month to get familiar to Unity.
 
-# Features
+## Features
 
 ### Simple control
 
-| ![](/assets/images/RobotEscaper_1.jpg) | ![](/assets/images/RobotEscaper_2.jpg) |
-|:---:|:---:|
-| Press Z to jump | Press X to dash |
+| ![](/assets/images/RobotEscaper_1.jpg) |
+|:---:|
+| Press Z to jump |
+
+| ![](/assets/images/RobotEscaper_2.jpg) |
+|:---:|
+| Press X to dash |
 
 It's extremely easy to control the robot - press Z to jump and X to dash. The robot can jump twice until it touches the platform to reset. There are two green orbs to indicate the jump times left.
 
@@ -51,11 +56,13 @@ The platform spawners would generate different sizes and kinds of platform rando
 
 ### Highscores
 
-![](/assets/images/RobotEscaper_7.jpg) ![](/assets/images/RobotEscaper_8.jpg)
+![](/assets/images/RobotEscaper_7.jpg)
+
+![](/assets/images/RobotEscaper_8.jpg)
 
 This game also has a highscore system. Once your score is within top 100, it would prompt you to submit your score. There is a server handling the MySQL database for these top 100 highscores.
 
-# Credits
+## Credits
 
 - Design/Program
     - Cheng-Han "Naga" Chiang
