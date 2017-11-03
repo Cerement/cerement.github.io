@@ -14,7 +14,6 @@ header:
  og_image: /assets/images/RobotEscaper.gif
 ---
 
-![](/assets/images/RobotEscaper.gif)
 <p style="text-align: center;"><img src="/assets/images/RobotEscaper.gif" /></p>
 <p style="text-align: center;"><a href="https://nagachiang.github.io/RobotEscaper" target="_blank">Click here to play</a></p>
 
