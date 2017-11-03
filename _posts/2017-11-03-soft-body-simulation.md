@@ -14,8 +14,7 @@ header:
 ---
 
 <p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe></p>
-
-RK4, spring coef. 8000, damper coef. 20
+<p style="text-align: center;">RK4, spring coef. 8000, damper coef. 20</p>
 
 ## Overview
 
@@ -68,15 +67,15 @@ Because the Euler Method is a first-order method, which means it needs a rather 
 
 First, we define the following equations (h is the step size, h > 0).
 
-<p style="text-align: center;">y<sub>n+1</sub> = y<sub>n</sub> + (h/6)(k<sub>1</sub> + 2k<sub>2</sub> + 2k<sub>3</sub> + k<sub>4</sub>)</p>
-<p style="text-align: center;">t<sub>n+1</sub> = t<sub>n</sub> + h</p>
+- y<sub>n+1</sub> = y<sub>n</sub> + (h/6)(k<sub>1</sub> + 2k<sub>2</sub> + 2k<sub>3</sub> + k<sub>4</sub>)
+- t<sub>n+1</sub> = t<sub>n</sub> + h
 
 For k<sub>1</sub>, k<sub>2</sub>, k<sub>3</sub> and k<sub>4</sub>:
 
-<p style="text-align: center;">k<sub>1</sub> = f(t<sub>n</sub>, y<sub>n</sub>)</p>
-<p style="text-align: center;">k<sub>2</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>1</sub>)</p>
-<p style="text-align: center;">k<sub>3</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>2</sub>)</p>
-<p style="text-align: center;">k<sub>4</sub> = f(t<sub>n</sub> + h, y<sub>n</sub> + hk<sub>3</sub>)</p>
+- k<sub>1</sub> = f(t<sub>n</sub>, y<sub>n</sub>)
+- k<sub>2</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>1</sub>)
+- k<sub>3</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>2</sub>)
+- k<sub>4</sub> = f(t<sub>n</sub> + h, y<sub>n</sub> + hk<sub>3</sub>)
 
 Which means:
 
@@ -99,10 +98,10 @@ When the particle and the plane are collided, the system would revert the normal
 ## Results
 
 <p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/Tdm5FKujJL0?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p style="text-align: center;">Euler Method, spring coef. 8000, damper coef. 20</p>
+<div style="text-align: center;">Euler Method, spring coef. 8000, damper coef. 20</div>
 
 <p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/5kBOrZvvIdk?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p style="text-align: center;">Euler Method, spring coef. 800, damper coef. 60</p>
+<div style="text-align: center;">Euler Method, spring coef. 800, damper coef. 60</div>
 
 <p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p style="text-align: center;">RK4, spring coef. 8000, damper coef. 20</p>
+<div style="text-align: center;">RK4, spring coef. 8000, damper coef. 20</div>
