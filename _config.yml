@@ -254,9 +254,10 @@ defaults:
       comments: true # true
       share: true
       related: false
+      breadcrumbs: true
       toc: true
       toc_label: "Table of Contents"
-      breadcrumbs: true
+      toc_icon: #
 
   # _pages
   - scope:
