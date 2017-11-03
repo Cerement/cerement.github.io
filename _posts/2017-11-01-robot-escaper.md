@@ -10,11 +10,11 @@ tags:
 - Horizontal Scrolling
 - Platformer
 header:
- teaser: /assets/images/RobotEscaper_0.jpg
- og_image: /assets/images/RobotEscaper_0.jpg
+ teaser: /assets/images/RobotEscaper.gif
+ og_image: /assets/images/RobotEscaper.gif
 ---
 
-![](/assets/images/RobotEscaper_0.jpg)
+![](/assets/images/RobotEscaper.gif)
 
 <p style="text-align: center;"><a href="https://nagachiang.github.io/RobotEscaper" target="_blank">Click here to play</a></p>
 
