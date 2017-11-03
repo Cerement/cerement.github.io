@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Inverse Kinematics"
 date: 2017-11-03T16:52:56+08:00
 categories:
