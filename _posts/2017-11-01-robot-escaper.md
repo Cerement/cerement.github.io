@@ -14,7 +14,7 @@ header:
  og_image: /assets/images/RobotEscaper.gif
 ---
 
-![](/assets/images/RobotEscaper.gif)
+<p style="text-align: center;"><img src="/assets/images/RobotEscaper.gif" /></p>
 
 <p style="text-align: center;"><a href="https://nagachiang.github.io/RobotEscaper" target="_blank">Click here to play</a></p>
 
@@ -30,9 +30,13 @@ It's my first game using Unity. I followed the tutorials on the Unity official s
 
 ### Simple control
 
-| ![](/assets/images/RobotEscaper_1.jpg) | ![](/assets/images/RobotEscaper_2.jpg) |
-|:---:|:---:|
-| Press Z to jump | Press X to dash |
+| ![](/assets/images/RobotEscaper_1.jpg) |
+|:---:|
+| Press Z to jump |
+
+| ![](/assets/images/RobotEscaper_2.jpg) |
+|:---:|
+| Press X to dash |
 
 It's extremely easy to control the robot - press Z to jump and X to dash. The robot can jump twice until it touches the platform to reset. There are two green orbs to indicate the jump times left.
 
