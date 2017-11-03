@@ -97,11 +97,14 @@ When the particle and the plane are collided, the system would revert the normal
 
 ## Results
 
+- Euler Method, spring coef. 8000, damper coef. 20
+
 <p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/Tdm5FKujJL0?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p style="text-align: center;">Euler Method, spring coef. 8000, damper coef. 20</p>
+
+- Euler Method, spring coef. 800, damper coef. 60
 
 <p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/5kBOrZvvIdk?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p style="text-align: center;">Euler Method, spring coef. 800, damper coef. 60</p>
+
+- RK4, spring coef. 8000, damper coef. 20
 
 <p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p style="text-align: center;">RK4, spring coef. 8000, damper coef. 20</p>
