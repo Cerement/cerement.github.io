@@ -9,7 +9,6 @@ tags:
 - Unity Web Player
 - Horizontal Scrolling
 - Platformer
-toc: true
 header:
  teaser: /assets/images/RobotEscaper.gif
  og_image: /assets/images/RobotEscaper.gif
