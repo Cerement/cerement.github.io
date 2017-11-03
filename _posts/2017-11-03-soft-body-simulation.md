@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Soft Body Simulation"
 date: 2017-11-03T15:09:37+08:00
 categories:
@@ -13,10 +13,8 @@ header:
  og_image: /assets/images/SoftBodySimulation.gif
 ---
 
-<div class="text-center">
-	<iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe></br>
-	<p>RK4, spring coef. 8000, damper coef. 20</p>
-</div>
+<p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align: center;">RK4, spring coef. 8000, damper coef. 20</p>
 
 ## Overview
 
@@ -28,34 +26,26 @@ Finally, because it's a plane there, I also used a simple method to resolve the 
 
 ## Mass-Spring System
 
-<div style="text-align: center;">
-	<img src="/assets/images/softbody_1.jpg"/>
-	<p>Cube of Particles</p>
-</div>
+<p style="text-align: center;"><img src="/assets/images/softbody_1.jpg"/></p>
+<p style="text-align: center;">Cube of Particles</p>
 
 As the image above, these particles constructs the cube. In this simulation, it took 1000 particles to form a 10x10x10 cube. Then, the images below shows each kind of the springs connected between particles.
 
 ### Structural Springs
 
-<div style="text-align: center;">
-	<img src="/assets/images/softbody_2.jpg"/>
-</div>
+<p style="text-align: center;"><img src="/assets/images/softbody_2.jpg"/></p>
 
 Structural Springs connect from each particle to its 6 adjacent neighbors, including up, down, left, right, forward, backward. These springs establish the basic structure of the cube.
 
 ### Shearing Springs
 
-<div style="text-align: center;">
-	<img src="/assets/images/softbody_3.jpg"/>
-</div>
+<p style="text-align: center;"><img src="/assets/images/softbody_3.jpg"/></p>
 
 Shearing Springs connect from each particle to its 20 diagonal neighbors. These springs can prevent the cube from excessive shearing.
 
 ### Bending Springs
 
-<div style="text-align: center;">
-	<img src="/assets/images/softbody_4.jpg"/>
-</div>
+<p style="text-align: center;"><img src="/assets/images/softbody_4.jpg"/></p>
 
 Bending Springs connect from each particle to its 6 second adjacent neighbors, kind of like the structural springs but these springs skip the first neighbor instead. They can prevent the cube from folding all over.
 
@@ -63,10 +53,8 @@ Bending Springs connect from each particle to its 6 second adjacent neighbors, k
 
 ### Euler Method
 
-<div style="text-align: center;">
-	<img src="/assets/images/EulerMethod.png"/>
-	<p>Illustration of the Euler Method (from <a href="https://en.wikipedia.org/wiki/Euler_method" target="_blank">Wikipedia</a>)</p>
-</div>
+<p style="text-align: center;"><img src="/assets/images/EulerMethod.png"/></p>
+<p style="text-align: center;">Illustration of the Euler Method (from <a href="https://en.wikipedia.org/wiki/Euler_method" target="_blank">Wikipedia</a>)</p>
 
 The blue curve in this graph is the unknown real values, while the red one is the approximation by Euler Method. From A0 to A1, this method only takes the status at position A0 to estimate the position after a small time step. In this case, physically, the Euler Method takes the net force at A0 and derive the acceleration to approximate the position at A1 with a small time step.
 
@@ -74,33 +62,27 @@ Because the Euler Method is a first-order method, which means it needs a rather 
 
 ### Runge–Kutta 4th-Order Method
 
-<div style="text-align: center;">
-	<img src="/assets/images/RK4.gif"/>
-	<p>Illustration of the RK4 (from <a href="http://www.physics.drexel.edu/students/courses/Comp_Phys/Integrators/rk4.html" target="_blank">Department of Physics, Drexel University</a>)</p>
-</div>
+<p style="text-align: center;"><img src="/assets/images/RK4.gif"/></p>
+<p style="text-align: center;">Illustration of the RK4 (from <a href="http://www.physics.drexel.edu/students/courses/Comp_Phys/Integrators/rk4.html" target="_blank">Department of Physics, Drexel University</a>)</p>
 
 First, we define the following equations (h is the step size, h > 0).
 
-<div style="text-align: center;">
-	y<sub>n+1</sub> = y<sub>n</sub> + (h/6)(k<sub>1</sub> + 2k<sub>2</sub> + 2k<sub>3</sub> + k<sub>4</sub>)</br>
-	t<sub>n+1</sub> = t<sub>n</sub> + h</br>
-</div>
+- y<sub>n+1</sub> = y<sub>n</sub> + (h/6)(k<sub>1</sub> + 2k<sub>2</sub> + 2k<sub>3</sub> + k<sub>4</sub>)
+- t<sub>n+1</sub> = t<sub>n</sub> + h
 
 For k<sub>1</sub>, k<sub>2</sub>, k<sub>3</sub> and k<sub>4</sub>:
 
-<div style="text-align: center;">
-	k<sub>1</sub> = f(t<sub>n</sub>, y<sub>n</sub>)</br>
-	k<sub>2</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>1</sub>)</br>
-	k<sub>3</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>2</sub>)</br>
-	k<sub>4</sub> = f(t<sub>n</sub> + h, y<sub>n</sub> + hk<sub>3</sub>)</br>
-</div>
+- k<sub>1</sub> = f(t<sub>n</sub>, y<sub>n</sub>)
+- k<sub>2</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>1</sub>)
+- k<sub>3</sub> = f(t<sub>n</sub> + (h/2), y<sub>n</sub> + (h/2)k<sub>2</sub>)
+- k<sub>4</sub> = f(t<sub>n</sub> + h, y<sub>n</sub> + hk<sub>3</sub>)
 
 Which means:
 
-<li>k<sub>1</sub> is the increment based on the slope at the <b>beginning</b> of the interval, using <b>y<sub>n</sub></b>.</li>
-                                <li>k<sub>2</sub> is the increment based on the slope at the <b>midpoint</b> of the interval, using <b>y<sub>n</sub> + (h/2)k<sub>1</sub></b>.</li>
-                                <li>k<sub>3</sub> is the increment based on the slope at the <b>midpoint</b> of the interval, using <b>y<sub>n</sub> + (h/2)k<sub>2</sub></b>.</li>
-                                <li>k<sub>4</sub> is the increment based on the slope at the <b>end</b> of the interval, using <b>y<sub>n</sub> + hk<sub>3</sub></b>.</li>
+- k<sub>1</sub> is the increment based on the slope at the <b>beginning</b> of the interval, using <b>y<sub>n</sub></b>.
+- k<sub>2</sub> is the increment based on the slope at the <b>midpoint</b> of the interval, using <b>y<sub>n</sub> + (h/2)k<sub>1</sub></b>.
+- k<sub>3</sub> is the increment based on the slope at the <b>midpoint</b> of the interval, using <b>y<sub>n</sub> + (h/2)k<sub>2</sub></b>.
+- k<sub>4</sub> is the increment based on the slope at the <b>end</b> of the interval, using <b>y<sub>n</sub> + hk<sub>3</sub></b>.
 
 The RK4 method is a fourth-order method, meaning that it's rather high-cost and more precise than the Euler Method. It's local error is on the order of O(h<sup>5</sup>), while the global error is order O(h<sup>4</sup>).
 
@@ -115,14 +97,11 @@ When the particle and the plane are collided, the system would revert the normal
 
 ## Results
 
-Euler Method, spring coef. 8000, damper coef. 20:
+<p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/Tdm5FKujJL0?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align: center;">Euler Method, spring coef. 8000, damper coef. 20</p>
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/Tdm5FKujJL0?rel=0" frameborder="0" allowfullscreen></iframe>
+<p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/5kBOrZvvIdk?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align: center;">Euler Method, spring coef. 800, damper coef. 60</p>
 
-Euler Method, spring coef. 800, damper coef. 60:
-
-<iframe width="640" height="480" src="https://www.youtube.com/embed/5kBOrZvvIdk?rel=0" frameborder="0" allowfullscreen></iframe>
-
-RK4, spring coef. 8000, damper coef. 20:
-
-<iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe>
+<p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align: center;">RK4, spring coef. 8000, damper coef. 20</p>
