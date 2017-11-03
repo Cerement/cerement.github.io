@@ -44,9 +44,15 @@ To generate the motion in between, it takes the last sample of motion A and the 
 
 ## Results
 
+- Motion A
+
 <iframe width="640" height="480" src="https://www.youtube.com/embed/hfiMgvOCtqc?rel=0" frameborder="0" allowfullscreen></iframe>
 
+- Motion B
+
 <iframe width="640" height="480" src="https://www.youtube.com/embed/G5fqcsrlvzs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+- Motion A+B (Slerped)
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/ZUpzu59V6M4?rel=0" frameborder="0" allowfullscreen></iframe>
 
