@@ -2,9 +2,9 @@
 title: "Robot Escaper"
 date: 2017-11-02T10:44:01+08:00
 categories:
-- Game
+- Games
 tags:
-- Game
+- Games
 - Unity
 - Unity Web Player
 - Horizontal Scrolling
