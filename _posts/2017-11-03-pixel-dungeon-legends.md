@@ -2,9 +2,9 @@
 title: "Pixel Dungeon: Legends"
 date: 2017-11-03T17:32:06+08:00
 categories:
-- Game Mod
+- Game Mods
 tags:
-- Game Mod
+- Game Mods
 - Pixel Dungeon
 - Roguelike
 - Android
