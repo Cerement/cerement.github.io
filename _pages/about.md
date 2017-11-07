@@ -1,5 +1,3 @@
----
-title: "About"
-permalink: /about/
-last_modified_at: 2017-10-30
----
+﻿## One-page PDF Resume
+
+[Google Drive](https://goo.gl/QB8KkP)
