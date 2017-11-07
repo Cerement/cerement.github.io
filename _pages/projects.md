@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Projects"
 permalink: /projects/
 date: 2017-11-06T15:50:55+08:00
