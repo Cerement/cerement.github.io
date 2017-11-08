@@ -1,5 +1,5 @@
 ---
-title: "[Solution] Unity Keeps Opening New Instances of Visual Studio"
+title: "[Solution] Unity Keeps Opening Visual Studio"
 date: 2017-11-08T17:35:52+08:00
 categories:
 - Unity
