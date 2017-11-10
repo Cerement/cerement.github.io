@@ -25,18 +25,22 @@
       </div>
     {% endif %}
 
-    <small><div>
-      <span class="page__date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+    <small><div style="display:table; padding-bottom:0.3em">
+      <div style="display:table-cell;"><span class="page__date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></span></div>
 
-      {% if site.category_archive.type and post.categories[0] %}
-        {% include category-list-archive.html %}
-      {% endif %}
+      <div style="display:table-cell;">
+        {% if site.category_archive.type and post.categories[0] %}
+          {% include category-list-archive.html %}
+        {% endif %}
+      </div>
 
-      {% if post.link %}
-        <strong><a style="padding-left:0.3em;" href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a></strong>
-      {% else %}
-        <strong><a style="padding-left:0.3em;" href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a></strong>
-      {% endif %}
+      <div style="display:table-cell;">
+        {% if post.link %}
+          <strong><a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a></strong>
+        {% else %}
+          <strong><a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a></strong>
+        {% endif %}
+      </div>
     </div></small>
 
   </article>
