@@ -12,7 +12,8 @@ date: 2017-11-07T11:17:27+08:00
 
 ### Qubit Games
 
-Game Client Programmer
+Game Client Programmer  
+2017.07 - Present
 
 - Item System in Qubot: Built most of this major update on my own with interior game engine. (C++, LynxEngine)
 
@@ -22,7 +23,8 @@ Game Client Programmer
 
 ### Bold Conjectures
 
-Game Programmer
+Game Programmer  
+2017.01 - 2017.07
 
 - Escape Dead Earth: Simplified casual real-time strategy game which was designed to use only mouse for gameplay. Built this game from scratch as the only programmer in 3 months. (C#, Unity)
 
@@ -32,7 +34,8 @@ Game Programmer
 
 ### National Chiao Tung University
 
-Master of Science in Multimedia Engineering
+Master of Science in Multimedia Engineering  
+2014 - 2016
 
 - Thesis: Applying Monte Carlo tree search for tactical decision-making in StarCraft
 
