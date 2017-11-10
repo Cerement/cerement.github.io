@@ -28,7 +28,7 @@ Unity 2017.1.1p3 (64-bit)
 
 We need to implement an event handler for slider's `OnValueChanged()`. Note that it must have a `float` parameter. Then add this script to your UI text.
 
-```C#
+```cs
 [RequireComponent(typeof(Text))]
 public class OnValueChangedText : MonoBehaviour
 {
