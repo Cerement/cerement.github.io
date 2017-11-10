@@ -49,7 +49,7 @@ public class OnValueChangedText : MonoBehaviour
 ### 2. Listen to Slider's `OnValueChanged()` Event
 
 - Drag the UI text object into the slider's `OnValueChanged()` panel in the inspector.
-- Select `OnValueChanged()` function below `Dynamic float` label. Only functions matched the event's parameters would show below this label.
+- Select `OnSliderValueChanged()` function below `Dynamic float` label. Only functions matched the event's parameters would show below this label.
 
 ![](/assets/images/2017-11-10-onvaluechanged_02.gif)
 
