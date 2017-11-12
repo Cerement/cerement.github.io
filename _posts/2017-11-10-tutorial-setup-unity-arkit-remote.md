@@ -1,6 +1,7 @@
 ---
 title: "Tutorial: Setup Unity ARKit Remote"
 date: 2017-11-10T15:21:58+08:00
+excerpt: "Unity ARKit Remote is a convenient tool for faster iteration on Unity ARKit Plugin, which allows developers debug their code without going through full deploying process."
 categories:
 - Unity
 tags:
@@ -27,7 +28,8 @@ However, it doesn't support AR hit test yet. Developers still need to find other
 
 ## Version
 
-Unity 2017.1.1p3 (64-bit)
+- Unity 2017.1.1p3 (64-bit)
+- Unity ARKit Plugin 1.0
 
 ## Step by Step
 
@@ -36,12 +38,12 @@ Unity 2017.1.1p3 (64-bit)
 - Download latest Unity ARKit Plugin from [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/92515)
 
 - Build the scene called UnityARKitRemote onto your compatible iOS device
-	- Make sure to use "Development Build" in build settings
+	- Make sure to check "Development Build" in build settings
 	- It's recommended to change product name and bundle identifier to make it distinguishable 
 
 ### 2. Setup Developing Scene
 
-- From the ARKitRemote folder, add ARKitRemoteConnection prefab into your developing scene
+- From the ARKitRemote folder, add ARKitRemoteConnection prefab to the root your developing scene
 
 ### 3. Connect Unity Editor with iOS Device
 
@@ -56,13 +58,13 @@ Unity 2017.1.1p3 (64-bit)
 
 ## Result
 
-### Official demo video
+### Official Demo Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kxPOCYb_1Y8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## Reference
 
 - [Introducing the Unity ARKit Remote - Unity Blog](https://blogs.unity3d.com/2017/08/03/introducing-the-unity-arkit-remote/)
-- [ARKit support for iOS via Unity-ARKit-Plugin post#605](https://forum.unity.com/threads/arkit-support-for-ios-via-unity-arkit-plugin.474385/page-13#post-3153415)
+- [ARKit support for iOS via Unity-ARKit-Plugin (post#605)](https://forum.unity.com/threads/arkit-support-for-ios-via-unity-arkit-plugin.474385/page-13#post-3153415)
 
 

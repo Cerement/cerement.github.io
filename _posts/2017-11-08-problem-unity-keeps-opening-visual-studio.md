@@ -1,6 +1,7 @@
 ---
 title: "Problem: Unity Keeps Opening Visual Studio"
 date: 2017-11-08T17:35:52+08:00
+excerpt: "Every time I open C# script in Unity, it keeps opening new instances of Visual Studio rather than in existing one."
 categories:
 - Unity
 tags:
@@ -15,7 +16,7 @@ Every time I open C# script in Unity, it keeps opening new instances of Visual S
 
 ## Version
 
-Unity 2017.1.1p3 (64-bit)
+- Unity 2017.1.1p3 (64-bit)
 
 ## Solution
 
