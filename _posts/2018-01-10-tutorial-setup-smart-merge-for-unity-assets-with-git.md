@@ -25,7 +25,7 @@ Since some of the Unity's assets, such as scenes, can't be version controlled, i
 
 Because Unity would save scenes and prefabs as binary files by default, which can't be version controlled, we need to force Unity to save files as YAML text-based files. In `Edit > Project Settings > Editor` menu, choose `Force Text` under `Asset Serialization Mode`.
 
-![](../assets/images/2018-01-10-tutorial-unity-smart-merge_01.gif)
+![](/assets/images/2018-01-10-tutorial-unity-smart-merge_01.gif)
 
 ### 2. Treat the Files as Binary to Avoid Git Merging Them Automatically
 
