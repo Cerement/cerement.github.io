@@ -1,7 +1,7 @@
 ---
 title: "教學：為Unity的檔案在git上設定Smart Merge"
 date: 2018-01-11T16:16:49+08:00
-excerpt: "因為有些Unity的檔案無法被版控，例如scene，所以當很多人要編輯同一個scene的時候，merge的時候總是會出問題。還好，利用Unity提供的一些功能，我們還是有方法可以將這些檔案納入版控。"
+excerpt: "因為有些Unity的檔案無法被版控，例如scene，所以當很多人要編輯同一個scene的時候，merge總是會出問題。還好，利用Unity提供的一些功能，我們還是有方法可以將這些檔案納入版控。"
 categories:
 - Unity
 tags:
@@ -14,7 +14,7 @@ tags:
 
 ## 概述
 
-因為有些Unity的檔案無法被版控，例如scene，所以當很多人要編輯同一個scene的時候，merge的時候總是會出問題。還好，利用Unity提供的一些功能，我們還是有方法可以將這些檔案納入版控。
+因為有些Unity的檔案無法被版控，例如scene，所以當很多人要編輯同一個scene的時候，merge總是會出問題。還好，利用Unity提供的一些功能，我們還是有方法可以將這些檔案納入版控。
 
 ## 版本
 
@@ -22,7 +22,7 @@ tags:
 
 ## 步驟
 
-### 1. 將Asset Serialization設為`Force Text`
+### 1. 將`Asset Serialization`設為`Force Text`
 
 因為Unity預設會將諸如scene這些檔案以binary的方式儲存，所以沒辦法被版控。這裡我們必須先強迫Unity，將這類檔案存成純文字的YAML格式。在選單中找到`Edit > Project Settings > Editor`，在`Asset Serialization Mode`項目下選擇`Force Text`。
 
