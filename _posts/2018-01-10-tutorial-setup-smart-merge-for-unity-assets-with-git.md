@@ -29,7 +29,7 @@ Because Unity would save scenes and prefabs as binary files by default, which ca
 
 ### 2. Treat the Files as Binary to Avoid Git Merging Them Automatically
 
-Now that those assets files are saved in text format, git would merge them automatically by default. To avoid this, we need to add some settings into `.gitattributes`. Create one in your project root if you don't have it yet.
+Now that those assets files are saved in text format, git would merge them automatically by default, which may not be semantically right. To avoid this, we need to add some settings into `.gitattributes`. Create one in your project root if you don't have it yet.
 
 ```
 *.unity binary
