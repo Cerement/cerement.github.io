@@ -1,7 +1,7 @@
 ---
 title: "問題：Unity一直重開Visual Studio"
 date: 2017-11-12T11:40:33+08:00
-except: "每次在Unity中打開一個script，都會重開一個新的Visual Studio，而不是像原本一樣，會自動開到已經存在的Visual Studio。"
+excerpt: "每次在Unity中打開一個script，都會重開一個新的Visual Studio，而不是像原本一樣，會自動開到已經存在的Visual Studio。"
 categories:
 - Unity
 tags:
