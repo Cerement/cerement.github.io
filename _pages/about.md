@@ -13,7 +13,7 @@ date: 2017-11-07T11:17:27+08:00
 ### Qubit Games
 
 Game Client Programmer  
-2017.07 - Present
+2017.07 - 2017.11
 
 - **Item System in Qubot**: Built most of this major update on my own with interior game engine. (C++, LynxEngine)
 
