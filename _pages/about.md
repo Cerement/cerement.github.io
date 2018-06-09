@@ -10,6 +10,13 @@ date: 2017-11-07T11:17:27+08:00
 
 ## Experience
 
+### JFI Games
+
+Senior Game Programmer
+2018.01 -
+
+- **Unannounced 3A Game Project**: Develop both client and server side using UE4.
+
 ### Qubit Games
 
 Game Client Programmer  

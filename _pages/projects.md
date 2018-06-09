@@ -16,7 +16,7 @@ date: 2017-11-06T15:50:55+08:00
 
 ### Robot Escaper
 
-[![](/assets/images/RobotEscaper.gif)](https://nagachiang.github.io/games/robot-escaper/)
+[![](/assets/images/RobotEscaper.gif)](https://nagachiang.github.io/robot-escaper/)
 
 - 2014
 - C#, Unity, MySQL, PHP
@@ -26,7 +26,7 @@ date: 2017-11-06T15:50:55+08:00
 
 ### Pixel Dungeon: Legends
 
-[![](/assets/images/PixelDungeonLegends.png)](https://nagachiang.github.io/game%20mods/pixel-dungeon-legends/)
+[![](/assets/images/PixelDungeonLegends.png)](https://nagachiang.github.io/pixel-dungeon-legends/)
 
 - 2015
 - Java, Android
@@ -45,7 +45,7 @@ with over 90% win rate against built-in AI in scenarios with less than 16 ranged
 
 ### Fib2584 AI
 
-[![](/assets/images/Fib2584.gif)](https://nagachiang.github.io/ai/fib2584-ai/)
+[![](/assets/images/Fib2584.gif)](https://nagachiang.github.io/fib2584-ai/)
 
 - 2014
 - C++, JavaScript
@@ -56,7 +56,7 @@ outrun most of the people.
 
 ### Soft Body Simulation
 
-[![](/assets/images/SoftBodySimulation.gif)](https://nagachiang.github.io/physics/soft-body-simulation/)
+[![](/assets/images/SoftBodySimulation.gif)](https://nagachiang.github.io/soft-body-simulation/)
 
 - 2014
 - C++, OpenGL
@@ -67,14 +67,14 @@ Euler Method and Runge-Kutta 4th-Order Method.
 
 ### Forward Kinematics
 
-[![](/assets/images/FK.gif)](https://nagachiang.github.io/animation/forward-kinematics/)
+[![](/assets/images/FK.gif)](https://nagachiang.github.io/forward-kinematics/)
 
 - 2014
 - C++, OpenGL
 
 ### Inverse Kinematics
 
-[![](/assets/images/IK.gif)](https://nagachiang.github.io/animation/inverse-kinematics/)
+[![](/assets/images/IK.gif)](https://nagachiang.github.io/inverse-kinematics/)
 
 - 2014
 - C++, OpenGL
