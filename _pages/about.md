@@ -12,7 +12,7 @@ date: 2017-11-07T11:17:27+08:00
 
 ### JFI Games
 
-Senior Game Programmer
+Senior Game Programmer  
 2018.01 -
 
 - **Unannounced 3A Game Project**: Develop both client and server side using UE4.
