@@ -256,8 +256,6 @@ defaults:
       share: false
       related: true
       breadcrumbs: true
-      toc: false
-      toc_label: "Table of Contents"
 
   # _pages
   - scope:
@@ -268,5 +266,3 @@ defaults:
       classes: wide
       author_profile: true
       breadcrumbs: false
-      toc: false
-      toc_label: "Table of Contents"
