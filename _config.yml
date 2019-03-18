@@ -249,15 +249,15 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: false
       comments: true 
-      share: true
+      share: false
       related: true
       breadcrumbs: true
       toc: false
       toc_label: "Table of Contents"
-      classes: wide
 
   # _pages
   - scope:
@@ -265,8 +265,8 @@ defaults:
       type: pages
     values:
       layout: single
+      classes: wide
       author_profile: true
       breadcrumbs: false
       toc: false
       toc_label: "Table of Contents"
-      classes: wide
