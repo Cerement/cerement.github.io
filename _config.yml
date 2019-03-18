@@ -251,12 +251,13 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      comments: true # true
+      comments: true 
       share: true
-      related: false
+      related: true
       breadcrumbs: true
-      toc: true
+      toc: false
       toc_label: "Table of Contents"
+      classes: wide
 
   # _pages
   - scope:
@@ -266,5 +267,6 @@ defaults:
       layout: single
       author_profile: true
       breadcrumbs: false
-      toc: true
+      toc: false
       toc_label: "Table of Contents"
+      classes: wide
