@@ -3,8 +3,7 @@ title: "Notes: Procedural Content Generation in Games - Ch1 Introduction"
 date: 2019-03-16T16:45:59+08:00
 excerpt: "Notes of the chapter 1 of the book Procedural Content Generation in Games by Noor Shaker, Julian Togelius, and Mark J. Nelson."
 layout: single
-classes:
-- wide
+classes: wide
 categories:
 - PCG
 tags:
@@ -13,7 +12,7 @@ tags:
 
 ---
 
-Notes of the chapter 1 of the book [Procedural Content Generation in Games](http://pcgbook.com/) by Noor Shaker, Julian Togelius, and Mark J. Nelson.
+Notes of chapter 1 of the book [Procedural Content Generation in Games](http://pcgbook.com/) by Noor Shaker, Julian Togelius, and Mark J. Nelson.
 
 
 ## 1.1 What is procedual content generation?
