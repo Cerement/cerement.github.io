@@ -249,14 +249,13 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: false
       comments: true 
       share: false
       related: false
       breadcrumbs: true
-      classes:
-        - wide
 
   # _pages
   - scope:
@@ -264,7 +263,6 @@ defaults:
       type: pages
     values:
       layout: single
+      classes: wide
       author_profile: true
       breadcrumbs: false
-      classes:
-        - wide
