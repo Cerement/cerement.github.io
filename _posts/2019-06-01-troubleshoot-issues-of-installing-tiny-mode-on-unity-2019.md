@@ -21,7 +21,7 @@ According to documentation, Tiny Mode package was implemented on Unity 2018.3 in
 
 ## Troubleshooting
 
-### Error occurs right after installing the Tiny Mode package
+- ### Error occurs right after installing the Tiny Mode package
 
 ```
 Library\PackageCache\com.unity.tiny@0.14.5-preview\Editor\Export\TinyAssetExporter.cs(712,38): error CS1061: 'TMP_FontAsset' does not contain a definition for 'characterDictionary' and no accessible extension method 'characterDictionary' accepting a first argument of type 'TMP_FontAsset' could be found (are you missing a using directive or an assembly reference?)
@@ -31,7 +31,7 @@ Current version of Tiny Mode doesn't support the latest TextMeshPro. We need to 
 
 ![](/assets/images/2019-06-01-tinymode-1.png)
 
-### Failed to execute `Import Samples` in the menu of Tiny Mode
+- ### Failed to execute `Import Samples` in the menu of Tiny Mode
 
 ```
 Exception: Failed to update dependencies:
@@ -46,11 +46,11 @@ bee.exe
 
 Make sure the project path doesn't contain any space.
 
-### Can't find the `Workshop` folder mentioned in the workshop video
+- ### Can't find the `Workshop` folder mentioned in the workshop video
 
 The `Workshop` folder mentioned in the video was for demonstration. The full version of the project can be found at `/Assets/TinySamples/BasicWorkshop`.
 
-### There is no `MainGroup` in the scene of `BasicWorkshop` project
+- ### There is no `MainGroup` in the scene of `BasicWorkshop` project
 
 `MainGroup` and other `EntityGroup` were placed in the `/Assets/TinySamples/BasicWorkshop/Entities`.
 

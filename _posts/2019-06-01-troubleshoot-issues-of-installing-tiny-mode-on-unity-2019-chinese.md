@@ -22,7 +22,7 @@ tags:
 
 ## 問題排除
 
-### 使用Package Manager安裝完Tiny Mode就跳error
+- ### 使用Package Manager安裝完Tiny Mode就跳error
 
 ```
 Library\PackageCache\com.unity.tiny@0.14.5-preview\Editor\Export\TinyAssetExporter.cs(712,38): error CS1061: 'TMP_FontAsset' does not contain a definition for 'characterDictionary' and no accessible extension method 'characterDictionary' accepting a first argument of type 'TMP_FontAsset' could be found (are you missing a using directive or an assembly reference?)
@@ -32,7 +32,7 @@ Library\PackageCache\com.unity.tiny@0.14.5-preview\Editor\Export\TinyAssetExport
 
 ![](/assets/images/2019-06-01-tinymode-1.png)
 
-### 執行Tiny選單中的Import Samples失敗
+- ### 執行Tiny選單中的Import Samples失敗
 
 ```
 Exception: Failed to update dependencies:
@@ -45,13 +45,13 @@ bee.exe
 [32m[3/8  0s] [0mWriteResponseFile artifacts/rsp/22013569038166155
 ```
 
-確保專案路徑中不要有任何空白即可。
+- 確保專案路徑中不要有任何空白即可。
 
 ### 找不到教學影片中提到的Workshop資料夾
 
 影片中說的那個Workshop資料夾，是他刻意了另外做一個空的版本，為了邊實做邊講解，事實上完整版就在`/Assets/TinySamples/BasicWorkshop`。
 
-### BasicWorkshop專案場景裡是EnemyGroup，而不是MainGroup
+- ### BasicWorkshop專案場景裡是EnemyGroup，而不是MainGroup
 
 MainGroup以及其他的EntityGroup都放在`/Assets/TinySamples/BasicWorkshop/Entities`。
 
