@@ -45,9 +45,9 @@ bee.exe
 [32m[3/8  0s] [0mWriteResponseFile artifacts/rsp/22013569038166155
 ```
 
-- 確保專案路徑中不要有任何空白即可。
+確保專案路徑中不要有任何空白即可。
 
-### 找不到教學影片中提到的Workshop資料夾
+- ### 找不到教學影片中提到的Workshop資料夾
 
 影片中說的那個Workshop資料夾，是他刻意了另外做一個空的版本，為了邊實做邊講解，事實上完整版就在`/Assets/TinySamples/BasicWorkshop`。
 
