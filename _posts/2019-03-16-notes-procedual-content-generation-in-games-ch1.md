@@ -9,6 +9,8 @@ tags:
   - Notes
 ---
 
+## Introduction
+
 Notes of chapter 1 of the book [Procedural Content Generation in Games](http://pcgbook.com/) by Noor Shaker, Julian Togelius, and Mark J. Nelson.
 
 ## 1.1 What is procedual content generation?
