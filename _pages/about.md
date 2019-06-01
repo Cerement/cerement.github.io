@@ -1,7 +1,7 @@
 ---
 title: "About"
 permalink: /about/
-date: 2017-11-07T11:17:27+08:00
+date: 2019-06-01T22:29:18+0800
 ---
 
 ## One-page Resume
@@ -15,27 +15,35 @@ date: 2017-11-07T11:17:27+08:00
 Senior Game Programmer  
 2018.01 -
 
-- **Unannounced 3A Game Project**: Develop both client and server side using UE4.
+- Built gameplay mechanics for a multiplayer TPS game. Architectured character and weapon attribute system which can be manipulated throughout buffs, skills and items, providing designers with flexibility to realize design. (C++, UE4)
+
+- Implemented an NPC with vision and hearing who can hunt down players in 3D space. Collaborated with artists to integrate its animation and visual effects. (C++, UE4)
+
+- Formulated protocols and database fields with back-end to access player records, behaviors and logs. (C++, UE4)
+
+- Analyzed and visualized game data and player behaviors, including the performance of weapons and player location heatmap, which helped balance tuning and level designs. (GCP, BigQuery, Python, matplotlib, seaborn)
+
+- Mentored a graduate from learning UE4 to architecting new system independently with my code review.
 
 ### Qubit Games
 
 Game Client Programmer  
 2017.07 - 2017.11
 
-- **Item System in Qubot**: Built most of this major update on my own with interior game engine. (C++, LynxEngine)
+- Built item system for Qubot with interior game engine. (C++, LynxEngine)
 
-- **AR Camera in Qubot Editor**: For players to place their creations into the real world and take photos. Translation, rotation and scaling with gestures are supported in AR scene. (C#, Unity, ARKit)
+- Upgraded Qubot editor with AR camera for players to place their creations into the real world and take photos, which supported translation, rotation and scaling with gestures in AR scene. (C#, Unity, ARKit)
 
-- **Player Data Extraction**: GUI Tool to extract data from Amazon DynamoDB for non-programmers’ use, such as in-game currency flow and behaviors of paid players. (C#, .NET, WPF, AWS SDK, DynamoDB)
+- Developed GUI Tool to extract data from Amazon DynamoDB for non-programmers' use, such as in-game currency flow and behaviors of paid players. (C#, .NET, WPF, AWS SDK, DynamoDB)
 
 ### Bold Conjectures
 
 Game Programmer  
 2017.01 - 2017.07
 
-- **Escape Dead Earth**: Simplified casual real-time strategy game which was designed to use only mouse for gameplay. Built this game from scratch as the only programmer in 3 months. (C#, Unity)
+- **Escape Dead Earth**: Built from prototyping to optimization as the only programmer in 3 months. (C#, Unity)
 
-- **Cartel**: Prototype of the multiplayer city-building strategy game about entrepreneurship simulation. Built the game from scratch as the only programmer with SpatialOS, a platform featuring in large-scaled simulation for MMO. Because SpatialOS SDK for Unity was in alpha, it’s buggy and I helped them to solve some bugs. (C#, Unity, SpatialOS, ECS)
+- **Cartel**: Prototyped on SpatialOS using SDK in alpha. Assisted them in solving bugs in SDK. (C#, Unity, SpatialOS) 
 
 ## Education
 
@@ -44,13 +52,11 @@ Game Programmer
 Master of Science in Multimedia Engineering  
 2014 - 2016
 
-- **Thesis**: Applying Monte Carlo tree search for tactical decision-making in StarCraft
-
-- **Relevant Courses**: 3D Game Programming, Computer Graphics, Computer Animations, Theory of Computer Games, Game Design, Network Security
+- Applying Monte Carlo tree search for tactical decision-making in StarCraft: StarCraft bot applied with Monte Carlo tree search for small-scaled combats, which performed well with over 90% win rate against built-in AI in scenarios with less than 16 ranged units on each side. (C++, BWAPI)
 
 ## Skills
 
-C++, C#, Unity
+C++, C#, Unity, UE4
 
 ## Languages
 
