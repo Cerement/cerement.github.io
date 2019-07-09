@@ -55,7 +55,7 @@ ln -s ../../Submodules/lib-project/Assets/Scripts lib-project
 
 I didn't do much research about the difference between these two commands. I choose `mklink` personally since the link it creates looks like a shortcut folder, while the one generated from `ln` looks just like an ordinary folder, which makes me worried about the confusion in the future.
 
-### 3. Ignore `Plugins` folder by configuring `.gitignore`
+### 3. Ignore `Plugins/` folder by configuring `.gitignore`
 
 Now git would think you do have a project under `Plugins/` and add them all to the version control. To avoid this, we need to ignore these files by adding a few lines in `.gitignore`:
 
