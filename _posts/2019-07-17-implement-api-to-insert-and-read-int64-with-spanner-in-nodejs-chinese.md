@@ -3,12 +3,12 @@ title: "使用Node.js實作從Spanner讀寫int64的API"
 date: 2019-07-17T01:15:32+08:00
 excerpt: "在JavaScript中，對整數的精度只有53 bits，無法真正支援到int64。因此，在使用Node.js實作一個與Cloud Spanner溝通的API時，如果其中有欄位的型別為int64，例如玩家的UID，很容易就會碰到數值失真的狀況。"
 categories:
-  - GCP
+  - Node.js
 tags:
+  - Node.js
+  - JavaScript
   - GCP
   - Cloud Spanner
-  - JavaScript
-  - Node.js
   - JSON
   - 中文
 ---
