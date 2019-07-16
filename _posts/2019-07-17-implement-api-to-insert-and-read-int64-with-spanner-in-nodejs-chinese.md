@@ -8,7 +8,7 @@ tags:
   - Node.js
   - JavaScript
   - GCP
-  - Cloud Spanner
+  - Spanner
   - JSON
   - 中文
 ---
