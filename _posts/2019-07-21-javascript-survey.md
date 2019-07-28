@@ -1,7 +1,8 @@
 ---
 title: "JavaScript探坑心得整理"
 date: 2019-07-21T17:21:00+08:00
-excerpt: "為了跟上軟體開發的趨勢，覺得自己該來學個JavaScript。在考慮該用什麼姿勢入坑，於是爬了很多文章看別人都怎麼說。":
+excerpt: "為了跟上軟體開發的趨勢，覺得自己該來學個JavaScript。在考慮該用什麼姿勢入坑，於是爬了很多文章看別人都怎麼說。"
+categories:
   - JavaScript
 tags:
   - JavaScript
