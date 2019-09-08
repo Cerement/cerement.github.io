@@ -13,7 +13,7 @@ header:
  og_image: /assets/images/SoftBodySimulation.gif
 ---
 
-<p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/xZAxX9luY2E?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align: center;"><img src="/assets/images/SoftBodySimulation.gif" /></p>
 <p style="text-align: center;">RK4, spring coef. 8000, damper coef. 20</p>
 
 ## Overview

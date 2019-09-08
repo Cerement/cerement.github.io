@@ -1,80 +1,20 @@
 ---
 title: "Projects"
 permalink: /projects/
-date: 2017-11-06T15:50:55+08:00
+date: 2019-09-08T17:24:55+08:00
 ---
 
-## Games
+## 2016
+- [Through Galaxies](https://nagachiang.itch.io/through-galaxies) `(Game, C#, Unity, PHP, PostgreSQL, Heroku)`
+- [MCTS Gladiator](https://github.com/NagaChiang/MCTSGladiator) `(AI, C++, Monte Carlo Tree Search)`
+- [Line Bot: Determination](https://github.com/NagaChiang/linebot-determination) `(Line Bot, Python, Django, Heroku)`
 
-### Through Galaxies
+## 2015
+- [Pixel Dungeon: Legends](https://nagachiang.github.io/pixel-dungeon-legends/) `(Game Mod, Java, Android)`
 
-[![](/assets/images/ThroughGalaxies.gif)](https://nagachiang.itch.io/through-galaxies)
-
-- 2016
-- C#, Unity, PostgreSQL, PHP, Heroku
-- Shoot'em-up, Bullet-hell, Vertical-scroller
-
-### Robot Escaper
-
-[![](/assets/images/RobotEscaper.gif)](https://nagachiang.github.io/robot-escaper/)
-
-- 2014
-- C#, Unity, MySQL, PHP
-- Infinite-runner, Horizontal-scroller
-
-## Game Mods
-
-### Pixel Dungeon: Legends
-
-[![](/assets/images/PixelDungeonLegends.png)](https://nagachiang.github.io/pixel-dungeon-legends/)
-
-- 2015
-- Java, Android
-- Rougelike, Turn-based
-
-## AI
-
-### MCTS Gladiator
-
-[![](/assets/images/MCTSGladiator.gif)](https://github.com/NagaChiang/MCTSGladiator)
-
-- 2016
-- C++, BWAPI
-- StarCraft bot applied with Monte Carlo tree search for small-scaled combats, which performed well
-with over 90% win rate against built-in AI in scenarios with less than 16 ranged units on each side. 
-
-### Fib2584 AI
-
-[![](/assets/images/Fib2584.gif)](https://nagachiang.github.io/fib2584-ai/)
-
-- 2014
-- C++, JavaScript
-- AI applied with temporal difference learning to play Fib2584, an alternative version of 2048, which could
-outrun most of the people.
-
-## Physics
-
-### Soft Body Simulation
-
-[![](/assets/images/SoftBodySimulation.gif)](https://nagachiang.github.io/soft-body-simulation/)
-
-- 2014
-- C++, OpenGL
-- Simulated a flexible cube falling on the floor with mass-spring system, which was applied with
-Euler Method and Runge-Kutta 4th-Order Method.
-
-## Animation
-
-### Forward Kinematics
-
-[![](/assets/images/FK.gif)](https://nagachiang.github.io/forward-kinematics/)
-
-- 2014
-- C++, OpenGL
-
-### Inverse Kinematics
-
-[![](/assets/images/IK.gif)](https://nagachiang.github.io/inverse-kinematics/)
-
-- 2014
-- C++, OpenGL
+## 2014
+- [Robot Escaper](https://nagachiang.github.io/robot-escaper/) `(Game, C#, Unity, PHP, MySQL)`
+- [Fib2584 AI](https://nagachiang.github.io/fib2584-ai/) `(AI, C++, JavaScript, Machine Learning)`
+- [Soft Body Simulation](https://nagachiang.github.io/soft-body-simulation/) `(Physics, C++, OpenGL, Euler Method, RK4)`
+- [Forward Kinematics](https://nagachiang.github.io/forward-kinematics/) `(Animation, C++, OpenGL)`
+- [Inverse Kinematics](https://nagachiang.github.io/inverse-kinematics/) `(Animation, C++, OpenGL)`

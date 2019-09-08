@@ -12,7 +12,7 @@ header:
  og_image: /assets/images/IK.gif
 ---
 
-<p style="text-align: center;"><iframe width="640" height="480" src="https://www.youtube.com/embed/rJnuneHwlmk?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align: center;"><img src="/assets/images/IK.gif" /></p>
 
 ## Overview
 
