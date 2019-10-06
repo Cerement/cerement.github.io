@@ -7,10 +7,13 @@ date: 2019-09-08T17:24:55+08:00
 ## 2019
 - [BSP Dungeon Generation with Unity ECS](https://github.com/NagaChiang/unity-ecs-bsp-dungeon-generation) `(PCG, C#, Unity, ECS)`
 
+## 2017
+- [Voxel Explosion Effect](https://www.youtube.com/watch?v=sjSDXTIYbXg) `(Graphics, C#, Unity)`
+
 ## 2016
 - [Through Galaxies](https://nagachiang.itch.io/through-galaxies) `(Game, C#, Unity, PHP, PostgreSQL, Heroku)`
 - [MCTS Gladiator](https://github.com/NagaChiang/MCTSGladiator) `(AI, C++, Monte Carlo Tree Search)`
-- [Line Bot: Determination](https://github.com/NagaChiang/linebot-determination) `(Line Bot, Python, Django, Heroku)`
+- [Line Bot: Determination](https://github.com/NagaChiang/linebot-determination) `(Bot, Python, Django, Heroku)`
 
 ## 2015
 - [Pixel Dungeon: Legends](https://nagachiang.github.io/pixel-dungeon-legends/) `(Game Mod, Java, Android)`
