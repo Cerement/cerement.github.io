@@ -57,7 +57,7 @@ Would be parsed this way with the parameter:
 }
 ```
 
-Then, depending on needs, to decide whether just pass it as string or include other modules to deal with it.
+Then, depending on needs, to decide whether just pass it as a string or include other modules to deal with it.
 
 ## Reference
 
