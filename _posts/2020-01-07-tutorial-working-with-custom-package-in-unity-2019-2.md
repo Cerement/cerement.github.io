@@ -14,7 +14,9 @@ tags:
 
 ## Overview
 
-Sharing common functionality and library between projects is always a problem when it comes to Unity projects. Some may try to use [git submodule combined with symbolic links](https://nagachiang.github.io/share-source-code-between-projects-with-git-submodule-in-unity/), but somehow it seems not a decent solution. Now Unity provides the package manager like [npm](https://www.npmjs.com/) or those in other fields. I believe it's a better way to solve the problem. This tutorial will guide you creating, developing and sharing custom packages in Unity.
+Sharing common functionality and library between projects is always a problem when it comes to Unity projects. Some may try to use [git submodule combined with symbolic links](https://nagachiang.github.io/share-source-code-between-projects-with-git-submodule-in-unity/), but somehow it seems not a decent solution. Now Unity provides the package manager like [npm](https://www.npmjs.com/) or those in other fields. I believe it's a better way to solve the problem.
+
+This tutorial will guide you creating, developing and sharing custom packages in Unity.
 
 ## Version
 
