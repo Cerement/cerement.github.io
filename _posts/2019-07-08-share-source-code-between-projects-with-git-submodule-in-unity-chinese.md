@@ -14,9 +14,7 @@ tags:
 
 ## 概述
 
-```
 2020-01-08 更新：建議使用[custom packages](/tutorial-working-with-custom-package-in-unity-2019-2)。
-```
 
 git submodule是常見的共用程式碼的方式，讓一些通用的程式功能，能夠在不同專案間持續累積。但在Unity專案中，由於每個asset都會產生一個meta檔來追蹤，meta勢必得加入版控。而當C專案同時被A和B兩個專案同時引用進專案資料夾，同一個asset的meta就會有A、B和C三種版本，不管哪個專案上傳meta，都會讓其他專案壞掉。
 
