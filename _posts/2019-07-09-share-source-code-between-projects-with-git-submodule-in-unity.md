@@ -13,6 +13,10 @@ tags:
 
 ## Overview
 
+```
+2020-01-08 Update: It's recommended to create [custom packages](/tutorial-working-with-custom-package-in-unity-2019-2) instead of this.
+```
+
 Git submodule is a common way to share source code between projects, so we can continuously maintain a toolkit for ourselves. However, in Unity projects, meta files must be version controlled since they are required for tracking the assets. When we let project A submodules project B, no matter whose meta files we choose to be version controlled, it will definitely break the other project.
 
 To solve this problem, we can let out main project submodule library project outside the `Assets/` folder, then create a symbolic link for `Scripts/` folder of library project in `Assets/Plugins/` folder of main project.
