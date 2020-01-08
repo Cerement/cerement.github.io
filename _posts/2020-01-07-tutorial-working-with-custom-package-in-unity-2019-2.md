@@ -146,7 +146,7 @@ The format of assembly definitions is JSON, so you can either edit them in your 
 
 So far my personally recommended workflow is working on my game project with my custom package imported locally from disk. While I'm making my game, I can continuously add new features to my custom package and push the changes to the git repository. Note that if you imported the package from other than local disk, the package will be a copy of certain version storing in `/Library/PackageCache` in the project.
 
-To import package from disk, open the package manager first, than click the plus icon at top-left corner to select your package.
+To import package from disk, open the package manager first, then click the plus icon at top-left corner to select your package.
 
 ![](/assets/images/2020-01-07-tutorial-working-with-custom-package-in-unity-2019-2_01.png)
 
@@ -190,7 +190,7 @@ It will get the `HEAD` of the repository by default. You can specify the branch 
 }
 ```
 
-Than get back to the Unity editor, you will see the editor is resolving the packages you just add.
+Then get back to the Unity editor, you will see the editor is resolving the packages you just add.
 
 ### Updating Packages
 
