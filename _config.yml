@@ -87,7 +87,7 @@ analytics:
 author:
   name             : "Naga Chiang"
   avatar           : "/assets/images/chikorita.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Game developer using Unity and UE4. A bold dungeon crawler loving roguelikes and roguelites."
+  bio              : "Game developer using Unity and UE4. A bold dungeon crawler."
   location         : "Taiwan"
   email            : "nagachiangdev@gmail.com"
   uri              :
