@@ -4,9 +4,12 @@ permalink: /projects/
 date: 2019-10-06T23:21:00+08:00
 ---
 
+## 2020
+- [Vue Tic-Tac-Toe](https://nagachiang.github.io/vue-tic-tac-toe/) `(Game, TypeScript, Vue.js)`
+
 ## 2019
 - [BSP Dungeon Generation with Unity ECS](https://github.com/NagaChiang/unity-ecs-bsp-dungeon-generation) `(PCG, C#, Unity, ECS)`
-- [Flickr Downloader CLI](https://github.com/NagaChiang/flickr-downloader-cli) `(Tool, Node.js)`
+- [Flickr Downloader CLI](https://github.com/NagaChiang/flickr-downloader-cli) `(Tool, JavaScript, Node.js)`
 
 ## 2017
 - [Voxel Explosion Effect](https://www.youtube.com/watch?v=sjSDXTIYbXg) `(Graphics, C#, Unity)`
