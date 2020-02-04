@@ -93,7 +93,7 @@ Check out the [official documentation](https://docs.unity3d.com/Manual/upm-manif
 
 ### Assembly Definitions
 
-[Assembly definitions in Unity](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to seperate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://disp.cc/b/253-bY79) is an in-depth guide for assembly definitions in Unity.
+[Assembly definitions in Unity](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to seperate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://gametorrahod.com/how-to-asmdef-upm/) is an in-depth guide for assembly definitions in Unity.
 
 The format of assembly definitions is JSON, so you can either edit them in your favorite text editor or in Unity editor's GUI. For now we just create them in text editor. Here are the samples. Replace the company name and package name for your package.
 
@@ -109,7 +109,13 @@ The format of assembly definitions is JSON, so you can either edit them in your 
 
 ```json
 {
-    "name": "CompanyName.PackageName.Editor"
+    "name": "CompanyName.PackageName.Editor",
+    "references": [
+        "CompanyName.PackageName"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
 }
 ```
 
