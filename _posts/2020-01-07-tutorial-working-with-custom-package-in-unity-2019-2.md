@@ -56,9 +56,9 @@ There are some files we need to create for the custom package later, including `
 
 ### `package.json`
 
-`package.json` is the package manifest file similar to [npm](https://www.npmjs.com/)'s.
+`package.json` is the package manifest file similar to [npm](https://www.npmjs.com/)'s. This manifest should always be placed at the root of your package. Unity package manager reads `package.json` to find out what the package is, such as name, version and dependencies.
 
-Here is an example. Fill out the fields to suit your package:
+Here is a sample `package.json` with recommended fields, please adapt this to your package:
 
 ```json
 {
@@ -89,13 +89,17 @@ The format of the package `name` is `com.companyname.packagename`.
 
 The value in `version` field must follow [semantic versioning](https://semver.org/) with format `major.minor.patch`; otherwise, it will break the strategy that automation tools use to check the compatibility. `major` is for breaking changes, `minor` is for backward-compatible API changes, and `patch` is about fixes with no API changes. When `major` is 0, it indicates this package isn't stable for production, may includes many breaking changes frequently. The initial version of packages should be `0.1.0`.
 
+Specify the dependencies of the package in the `dependencies` field. These referenced pacakges will be imported automatically when developers import this package. Please check out [npm documentation](https://docs.npmjs.com/files/package.json#dependencies) for detailed syntax about specifying version ranges, but not all the syntax are tested on Unity.
+
 Check out the [official documentation](https://docs.unity3d.com/Manual/upm-manifestPkg.html) of `package.json` for more details.
 
 ### Assembly Definitions
 
 [Assembly definitions in Unity](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to seperate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://gametorrahod.com/how-to-asmdef-upm/) is an in-depth guide for assembly definitions in Unity.
 
-The format of assembly definitions is JSON, so you can either edit them in your favorite text editor or in Unity editor's GUI. For now we just create them in text editor. Here are the samples. Replace the company name and package name for your package.
+Arranging all scripts into assembly definitions is required for packages. Assembly definitions will include all scripts in that folder and its subfolders, except for the subfolders with their own assembly definitions.
+
+Since assembly definitions are plain text files, you can either create them with your favorite text editor or with Unity editor through the `Create` dropdown menu.
 
 #### CompanyName.PackageName.asmdef
 
@@ -147,6 +151,33 @@ The format of assembly definitions is JSON, so you can either edit them in your 
     "excludePlatforms": []
 }
 ```
+
+Editor scripts must be seperated into another assembly definitions with only `Editor` in `includePlatforms` field; otherwise, editor scripts will be included during packaging, which results in missing reference errors. If the editor scripts are scattered all around the project and you don't want them have their own assembly definitions for each subfolder, you can consider creating assembly definition references (`*.asmref`) pointing to existing assembly definitions instead.
+
+### Samples
+
+You can provide some example codes or example assets, such as demo scenes and prefabs, optionally imported into user's project under the `Assets` folder. By design, scenes in pacakges can't be opened under the `Packages` folder since the packages are read-only (unless you import the package from the disk and develop it).
+
+Add `samples` field in your `package.json`:
+
+```json
+{
+    "samples": [
+        {
+            "displayName": "Sample 1",
+            "description": "Description for sample 1.",
+            "path": "Samples/sample-folder-1"
+        },
+        {
+            "displayName": "Sample 2",
+            "description": "Description for sample 2.",
+            "path": "Samples/sample-folder-2"
+        }
+    ]
+}
+```
+
+You can also hide the sample folders from Unity's import procedure by using the [special folder names](https://docs.unity3d.com/Manual/SpecialFolders.html).
 
 ## Developing Custom Packages
 
