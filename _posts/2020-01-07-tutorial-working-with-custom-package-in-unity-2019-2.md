@@ -177,7 +177,7 @@ Add `samples` field in your `package.json`:
 }
 ```
 
-You can also hide the sample folders from Unity's import procedure by using the [special folder names](https://docs.unity3d.com/Manual/SpecialFolders.html).
+You can also exclude the sample folders from Unity's import procedure by using the [special folder names](https://docs.unity3d.com/Manual/SpecialFolders.html).
 
 ## Developing Custom Packages
 
