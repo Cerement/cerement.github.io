@@ -21,7 +21,7 @@ It won't work.
 
 ## Environment
 
-- Docker v19.03.5
+- Docker 19.03.5
 
 ## Solution
 
