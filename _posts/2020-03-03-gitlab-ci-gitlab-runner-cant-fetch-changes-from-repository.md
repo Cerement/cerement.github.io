@@ -47,5 +47,5 @@ For example:
 
 ## Reference
 
-- [Advanced configuration | GitLab](https://docs.gitlab.com/runner/configuration/advanced-configuration.html#how-clone_url-works)
+- [Advanced configuration - GitLab](https://docs.gitlab.com/runner/configuration/advanced-configuration.html#how-clone_url-works)
 
