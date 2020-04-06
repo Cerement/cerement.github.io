@@ -45,6 +45,12 @@ For example:
   clone_url = "http://192.168.1.23"
 ```
 
+Then restart the Gitlab Runner:
+
+```
+# gitlab-runner restart
+```
+
 ## Reference
 
 - [Advanced configuration - GitLab](https://docs.gitlab.com/runner/configuration/advanced-configuration.html#how-clone_url-works)
