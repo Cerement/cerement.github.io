@@ -1,5 +1,5 @@
 ---
-title: "Docker: Bind to Docker Socket on Windows Host from Linux Containers"
+title: "Docker: Binding to Docker Socket on Windows Host from Linux Containers"
 date: 2020-03-03T15:23:00+08:00
 excerpt: "Method to bind to docker socket on Windows host."
 categories:
