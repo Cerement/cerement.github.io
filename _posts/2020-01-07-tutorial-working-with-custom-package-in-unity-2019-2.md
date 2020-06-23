@@ -18,7 +18,7 @@ Sharing common functionality and library between projects is always a problem wh
 
 This tutorial will guide you creating, developing and sharing custom packages in Unity.
 
-## Version
+## Environment
 
 - Unity 2019.2.0f1
 - Package Manager UI 2.2.0
@@ -95,7 +95,7 @@ Check out the [official documentation](https://docs.unity3d.com/Manual/upm-manif
 
 ### Assembly Definitions
 
-[Assembly definitions in Unity](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to seperate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://gametorrahod.com/how-to-asmdef-upm/) is an in-depth guide for assembly definitions in Unity.
+Starting from Unity 2017.3, [Assembly definitions](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to seperate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://gametorrahod.com/how-to-asmdef-upm/) is an in-depth guide for assembly definitions in Unity.
 
 Arranging all scripts into assembly definitions is required for packages. Assembly definitions will include all scripts in that folder and its subfolders, except for the subfolders with their own assembly definitions.
 
@@ -152,11 +152,42 @@ Since assembly definitions are plain text files, you can either create them with
 }
 ```
 
-Editor scripts must be seperated into another assembly definitions with only `Editor` in `includePlatforms` field; otherwise, editor scripts will be included during packaging, which results in missing reference errors. If the editor scripts are scattered all around the project and you don't want them have their own assembly definitions for each subfolder, you can consider creating assembly definition references (`*.asmref`) pointing to existing assembly definitions instead.
+Editor scripts must be seperated into another assembly definitions with only `Editor` in `includePlatforms` field; otherwise, editor scripts will be included during packaging, which results in missing reference errors.
+
+Note that only in Unity 2018.4 and newer, the referenced assemblies can be optional, which means if there is any measure in the script to deal with missing references, e.g. define symbols, it’s ok to have some of the assemblies in the `references` field not found.
+
+### Assembly References
+
+Supported in Unity 2019.2 and newer, assembly references (*.asmref) provides a way to include scripts under the folder into the existing assembly definition in other places, preventing from too many assemblies just because of scattered script folders.
+
+### Links
+
+In the detail penal of Package Manager, there are some links to documentation, changelog and licenses. So far these links’ targets are hard-coded with some rules and only providing offline files, which means users must have the package installed or existing in Unity cache to open the files.
+
+#### Documentation
+
+Package Manager UI will find the documentation folder in the package root with this order:
+
+- `Documentation~` (special folder name, excluded from importing)
+- `Documentation`
+
+Then, it will find the entry of the documentation under the folder with this order:
+
+- `index.md` (case-insensitive)
+- `tableofcontents.md` (case-insensitive)
+- First found `*.md`
+
+#### Changelog
+
+Package Manager will find `CHANGELOG.md` in the package root.
+
+#### Licenses
+
+Package Manager will find `LICENSE.md` in the package root.
 
 ### Samples
 
-You can provide some example codes or example assets, such as demo scenes and prefabs, optionally imported into user's project under the `Assets` folder. By design, scenes in pacakges can't be opened under the `Packages` folder since the packages are read-only (unless you import the package from the disk and develop it).
+Supported in Package Manager UI 2.0 and later, You can provide some example codes or example assets, such as demo scenes and prefabs, optionally imported into user's project under the `Assets` folder. By design, scenes in pacakges can't be opened under the `Packages` folder since the packages are read-only (unless you import the package from the disk and develop it).
 
 Add `samples` field in your `package.json`:
 
@@ -181,7 +212,7 @@ You can also exclude the sample folders from Unity's import procedure by using t
 
 ## Developing Custom Packages
 
-So far my personally recommended workflow is working on my game project with my custom package imported locally from disk. While I'm making my game, I can continuously add new features to my custom package and push the changes to the git repository. Note that if you imported the package from other than local disk, the package will be a copy of certain version storing in `/Library/PackageCache` in the project.
+So far my personally recommended workflow is working on my game project with my custom package imported locally from disk. While I'm making my game, I can continuously add new features to my custom package and push the changes to the git repository. Note that if you imported the package from sources other than local disk, the package will be a copy of certain version storing in `/Library/PackageCache` in the project.
 
 To import package from disk, open the package manager first, then click the plus icon at top-left corner to select your package.
 
@@ -235,7 +266,7 @@ Once you import the pacakge from git, Unity will add a `lock` field after `depen
 
 ## Custom Package Registries
 
-Unity supports [scoped package registries](https://docs.unity3d.com/Manual/upm-scoped.html) for you to add custom registries other than Unity default ones. I didn't try it myself, just mention it here for anyone interested in.
+Unity supports [scoped package registries](https://docs.unity3d.com/Manual/upm-scoped.html) for you to add custom registries other than Unity default ones.
 
 ## References
 
