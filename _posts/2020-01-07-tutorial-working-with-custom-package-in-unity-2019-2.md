@@ -89,13 +89,13 @@ The format of the package `name` is `com.companyname.packagename`.
 
 The value in `version` field must follow [semantic versioning](https://semver.org/) with format `major.minor.patch`; otherwise, it will break the strategy that automation tools use to check the compatibility. `major` is for breaking changes, `minor` is for backward-compatible API changes, and `patch` is about fixes with no API changes. When `major` is 0, it indicates this package isn't stable for production, may includes many breaking changes frequently. The initial version of packages should be `0.1.0`.
 
-Specify the dependencies of the package in the `dependencies` field. These referenced pacakges will be imported automatically when developers import this package. Please check out [npm documentation](https://docs.npmjs.com/files/package.json#dependencies) for detailed syntax about specifying version ranges, but not all the syntax are tested on Unity.
+Specify the dependencies of the package in the `dependencies` field. These referenced packages will be imported automatically when developers import this package. Please check out [npm documentation](https://docs.npmjs.com/files/package.json#dependencies) for detailed syntax about specifying version ranges, but not all the syntax are tested on Unity.
 
 Check out the [official documentation](https://docs.unity3d.com/Manual/upm-manifestPkg.html) of `package.json` for more details.
 
 ### Assembly Definitions
 
-Starting from Unity 2017.3, [Assembly definitions](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to seperate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://gametorrahod.com/how-to-asmdef-upm/) is an in-depth guide for assembly definitions in Unity.
+Starting from Unity 2017.3, [Assembly definitions](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to separate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://gametorrahod.com/how-to-asmdef-upm/) is an in-depth guide for assembly definitions in Unity.
 
 Arranging all scripts into assembly definitions is required for packages. Assembly definitions will include all scripts in that folder and its subfolders, except for the subfolders with their own assembly definitions.
 
@@ -152,7 +152,7 @@ Since assembly definitions are plain text files, you can either create them with
 }
 ```
 
-Editor scripts must be seperated into another assembly definitions with only `Editor` in `includePlatforms` field; otherwise, editor scripts will be included during packaging, which results in missing reference errors.
+Editor scripts must be separated into another assembly definitions with only `Editor` in `includePlatforms` field; otherwise, editor scripts will be included during packaging, which results in missing reference errors.
 
 Note that only in Unity 2018.4 and newer, the referenced assemblies can be optional, which means if there is any measure in the script to deal with missing references, e.g. define symbols, it’s ok to have some of the assemblies in the `references` field not found.
 
@@ -164,26 +164,26 @@ Supported in Unity 2019.2 and newer, assembly references (*.asmref) provides a w
 
 In the detail penal of Package Manager, there are some links to documentation, changelog and licenses. So far these links’ targets are hard-coded with some rules and only providing offline files, which means users must have the package installed or existing in Unity cache to open the files.
 
-#### Documentation
+- **Documentation**
 
-Package Manager UI will find the documentation folder in the package root with this order:
+  Package Manager UI will find the documentation folder in the package root with this order:
 
-- `Documentation~` (special folder name, excluded from importing)
-- `Documentation`
+  - `Documentation~` (special folder name, excluded from importing)
+  - `Documentation`
 
-Then, it will find the entry of the documentation under the folder with this order:
+  Then, it will find the entry of the documentation under the folder with this order:
 
-- `index.md` (case-insensitive)
-- `tableofcontents.md` (case-insensitive)
-- First found `*.md`
+  - `index.md` (case-insensitive)
+  - `tableofcontents.md` (case-insensitive)
+  - First found `*.md`
 
-#### Changelog
+- **Changelog**
 
-Package Manager will find `CHANGELOG.md` in the package root.
+  Package Manager will find `CHANGELOG.md` in the package root.
 
-#### Licenses
+- **Licenses**
 
-Package Manager will find `LICENSE.md` in the package root.
+  Package Manager will find `LICENSE.md` in the package root.
 
 ### Samples
 
@@ -260,9 +260,9 @@ It will get the `HEAD` of the repository by default. You can specify the branch 
 
 Then get back to the Unity editor, you will see the editor is resolving the packages you just add.
 
-### Updating Packages
+### Updating Packages From Git
 
-Once you import the pacakge from git, Unity will add a `lock` field after `dependencies` in `manifest.json` to prevent any unexpected changes to the packages. Either you want to update the package or switch the tag, you have to remove corresponding entry in the `lock` array after editing the URL.
+Once you import the package from git, Unity will add a `lock` field after `dependencies` in `manifest.json` to prevent any unexpected changes to the packages. Either you want to update the package or switch the tag, you have to remove corresponding entry in the `lock` array after editing the URL.
 
 ## Custom Package Registries
 
