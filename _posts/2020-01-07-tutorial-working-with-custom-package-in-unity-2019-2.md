@@ -164,7 +164,7 @@ Supported in Unity 2019.2 and newer, assembly references (*.asmref) provides a w
 
 In the detail penal of Package Manager, there are some links to documentation, changelog and licenses. So far these links’ targets are hard-coded with some rules and only providing offline files, which means users must have the package installed or existing in Unity cache to open the files.
 
-- **Documentation**
+- Documentation
 
   Package Manager UI will find the documentation folder in the package root with this order:
 
@@ -177,11 +177,11 @@ In the detail penal of Package Manager, there are some links to documentation, c
   - `tableofcontents.md` (case-insensitive)
   - First found `*.md`
 
-- **Changelog**
+- Changelog
 
   Package Manager will find `CHANGELOG.md` in the package root.
 
-- **Licenses**
+- Licenses
 
   Package Manager will find `LICENSE.md` in the package root.
 
