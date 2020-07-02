@@ -8,7 +8,6 @@ tags:
 - Management
 - Notes
 - 中文
-published: false
 ---
 
 > 原文為[Habits of High-Functioning Teams](https://deniseyu.io/2020/05/23/habits-of-high-performing-teams.html)，已徵得作者[Denise Yu](https://deniseyu.io/)同意翻譯。作者分享了他職涯中的經驗，試著歸納出優秀軟體團隊的共通特質。本文為閱讀過後的整理筆記，並非原文的逐句翻譯，若與原文意義有出入，歡迎留言或是來信指正。
@@ -45,7 +44,7 @@ published: false
 有好的軟體開發習慣的人，會花費額外的時間去紀錄當下的狀況脈絡，例如：
 
 - 有意義的commit訊息
-- 依循程式語言慣例，並且表明意圖的命名
+- 依循程式語言慣例，並且表明意圖的命名方式
 - 在單元測試中使用有意義的變數命名
 - 在issue上的討論串做溝通，避免使用私訊，以留下紀錄方便未來查閱
 
@@ -92,7 +91,7 @@ published: false
 
 > 我：欸，為什麼那裡要放個load balancer啊？  
 >
-> 某人：你想問的應該是，為什麼我們會選HAProxy，然後為什麼是那些service需要用它，對吧？  
+> 某人：你想問的應該是，為什麼我們會選HAProxy，然後為什麼是那些service需要，對吧？  
 > 
 > 我：啊對，這就是我想問的！  
 > 
