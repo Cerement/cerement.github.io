@@ -1,7 +1,7 @@
 ---
 title: "筆記：高能軟體開發團隊的文化"
 date: 2020-07-02T17:25:00+08:00
-excerpt: "原文為Habits of High-Functioning Teams，作者分享了他職涯中的經驗，試著歸納出優秀軟體團隊的共通特質。本文為閱讀過後的心得筆記。"
+excerpt: "原文為Habits of High-Functioning Teams，作者分享了他職涯中的經驗，試著歸納出優秀軟體團隊的共通特質。本文為閱讀過後的整理筆記。"
 categories:
 - Management
 tags:
