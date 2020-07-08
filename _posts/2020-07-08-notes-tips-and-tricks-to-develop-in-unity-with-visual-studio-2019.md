@@ -17,11 +17,13 @@ This is the summary of the talk on Unite Now 2020:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KH0nqTpOVuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Some of the features mentioned come with Visual Studio 2019 Tools for Unity.
+
 ## Tips
 
 ### Roslyn Analyzers
 
-[Roslyn analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2019) are code analyzers in Visual Studio which inspect your C# code for style, quality and potential issues. Unity made an implementation for itself. If you installed Visual Studio with Unity, you should have Visual Studio 2019 Tools for Unity, which includes the analyzers.
+[Roslyn analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2019) are code analyzers in Visual Studio which inspect your C# code for style, quality and potential issues. Unity made an implementation for itself.
 
 For example, it will hint that you left an empty Unity message:
 
