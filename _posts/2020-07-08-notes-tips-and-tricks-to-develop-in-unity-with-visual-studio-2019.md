@@ -17,9 +17,9 @@ This is the summary of the talk on Unite Now 2020:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KH0nqTpOVuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Some of the features mentioned come with Visual Studio 2019 Tools for Unity.
-
 ## Tips
+
+Most of the features mentioned in the following come with Visual Studio 2019 Tools for Unity.
 
 ### Roslyn Analyzers
 
@@ -55,6 +55,8 @@ In the dropdown of `Attach to Unity`, there is an alternative option that it wil
 
 - **Ctrl+K, Ctrl+C**: Comment
 - **Ctrl+K, Ctrl+U**: Uncomment
+
+![](../assets/images/2020-07-08-17-42-27.png)
 
 ### Clipboard History
 
