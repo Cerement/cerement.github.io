@@ -1,5 +1,5 @@
 ---
-title: "Notes: Tips and Tricks to Develop in Unity with Visual Studio 2019 | Unite Now 2020"
+title: "Notes: Tips and Tricks to Develop in Unity with Visual Studio 2019"
 date: 2020-07-08T17:23:00+08:00
 excerpt: "This is the summary of the talk \"Tips and Tricks to Develop in Unity with Visual Studio 2019\" on Unite Now 2020."
 categories:
