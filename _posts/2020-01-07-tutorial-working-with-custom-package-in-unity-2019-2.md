@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Working with Custom Packages in Unity 2019.2"
+title: "Tutorial: Working with Custom Packages in Unity"
 date: 2020-01-07T23:15:00+08:00
 excerpt: "Sharing common functionality and library between projects is always a problem when it comes to Unity projects. Now Unity provides the package manager like npm or those in other fields. This tutorial will guide you creating, developing and sharing custom packages in Unity."
 categories:
@@ -19,11 +19,6 @@ tags:
 Sharing common functionality and library between projects is always a problem when it comes to Unity projects. Some may try to use [git submodule combined with symbolic links](/share-source-code-between-projects-with-git-submodule-in-unity), but somehow it seems not a decent solution. Now Unity provides the package manager like [npm](https://www.npmjs.com/) or those in other fields. I believe it's a better way to solve the problem.
 
 This tutorial will guide you creating, developing and sharing custom packages in Unity.
-
-## Environment
-
-- Unity 2019.2.0f1
-- Package Manager UI 2.2.0
 
 ## Creating Packages
 
@@ -55,6 +50,8 @@ The following is the [layout convention](https://docs.unity3d.com/Manual/cus-lay
 For example, if the company name is "CoolCompany", package name is "GreatPackage", so the runtime assembly definition (`*.asmdef`) will be named `CoolCompany.GreatPackage.asmdef`.
 
 There are some files we need to create for the custom package later, including `package.json` and `*.asmdef`.
+
+---
 
 ### `package.json`
 
@@ -95,6 +92,8 @@ Specify the dependencies of the package in the `dependencies` field. These refer
 
 Check out the [official documentation](https://docs.unity3d.com/Manual/upm-manifestPkg.html) of `package.json` for more details.
 
+---
+
 ### Assembly Definitions
 
 Starting from Unity 2017.3, [Assembly definitions](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) provide a way to separate your scripts into different assemblies. Each of them acts as a library within the Unity project and has its own dependencies on other assemblies. Unity reduces compilation time by only rebuilding the affected assemblies instead of whole project when you make a change. Unity's package manager fully relies on these assembly definitions. [Here](https://gametorrahod.com/how-to-asmdef-upm/) is an in-depth guide for assembly definitions in Unity.
@@ -102,6 +101,8 @@ Starting from Unity 2017.3, [Assembly definitions](https://docs.unity3d.com/Manu
 Arranging all scripts into assembly definitions is required for packages. Assembly definitions will include all scripts in that folder and its subfolders, except for the subfolders with their own assembly definitions.
 
 Since assembly definitions are plain text files, you can either create them with your favorite text editor or with Unity editor through the `Create` dropdown menu.
+
+![](../assets/images/2020-07-09-11-00-15.png)
 
 #### CompanyName.PackageName.asmdef
 
@@ -156,13 +157,27 @@ Since assembly definitions are plain text files, you can either create them with
 
 Editor scripts must be separated into another assembly definitions with only `Editor` in `includePlatforms` field; otherwise, editor scripts will be included during packaging, which results in missing reference errors.
 
+![](../assets/images/2020-07-09-11-06-53.png)
+
 Note that only in Unity 2018.4 and newer, the referenced assemblies can be optional, which means if there is any measure in the script to deal with missing references, e.g. define symbols, it’s ok to have some of the assemblies in the `references` field not found.
+
+Personally I recommend unchecking `Use GUIDs` since it provides more information when any of the references is lost.
+
+![](../assets/images/2020-07-09-11-04-55.png)
+
+---
 
 ### Assembly References
 
 Supported in Unity 2019.2 and newer, assembly references (*.asmref) provides a way to include scripts under the folder into the existing assembly definition in other places, preventing from too many assemblies just because of scattered script folders.
 
+![](../assets/images/2020-07-09-11-08-23.png)
+
+---
+
 ### Links
+
+![](../assets/images/2020-07-09-11-09-51.png)
 
 In the detail penal of Package Manager, there are some links to documentation, changelog and licenses. So far these links’ targets are hard-coded with some rules and only providing offline files, which means users must have the package installed or existing in Unity cache to open the files.
 
@@ -187,6 +202,8 @@ In the detail penal of Package Manager, there are some links to documentation, c
 
   Package Manager will find `LICENSE.md` in the package root.
 
+---
+
 ### Accessing Package Assets
 
 To access assets in packages, use this path scheme:
@@ -209,7 +226,11 @@ string absolute = Path.GetFullPath("Packages/com.example.package/Example/Images/
 
 Note that packages are read-only unless it's imported from the local disk, which means you can't create any asset into the published packages from the project.
 
+---
+
 ### Samples
+
+![](../assets/images/2020-07-09-11-10-59.png)
 
 Supported in Package Manager UI 2.0 and later, You can provide some example codes or example assets, such as demo scenes and prefabs, optionally imported into user's project under the `Assets` folder. By design, scenes in pacakges can't be opened under the `Packages` folder since the packages are read-only (unless you import the package from the disk and develop it).
 
