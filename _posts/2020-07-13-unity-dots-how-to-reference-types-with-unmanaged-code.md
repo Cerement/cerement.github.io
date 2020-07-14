@@ -24,7 +24,32 @@ Because `Type` and `typeof()` are managed code, which can't be compiled with Bur
 
 Assuming we need to check if the entity has a particular component through the array from `EntityManager.GetComponentTypes()`. By looking at the constructor of `ComponentType`, there is only one version with a `Type` parameter, so just give it a try:
 
-<script src="https://gist.github.com/NagaChiang/8ce54f96531b69d137849449db3baad4.js"></script>
+```cs
+public struct SampleComponent : IComponentData { }
+```
+
+```cs
+[AlwaysSynchronizeSystem]
+public class SampleSystem : JobComponentSystem
+{
+    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    {
+        EntityManager entityManager = EntityManager;
+        Entities.ForEach((Entity entity) =>
+        {
+            NativeArray<ComponentType> types = entityManager.GetComponentTypes(entity, Allocator.TempJob);
+            if (types.Contains(new ComponentType(typeof(SampleComponent))))
+            {
+                Debug.Log("Found SampleComponent!");
+            }
+
+            types.Dispose();
+        }).Run();
+
+        return default;
+    }
+}
+```
 
 However, the Burst compiler complains when compiling after hitting play:
 
@@ -34,9 +59,30 @@ D:\Workspace\ecs\Assets\Scripts\SampleSystem.cs(15,13): Burst error BC1025: Acce
 
 Because both `Type` and `typeof()` are managed code, it's not allowed by the Burst compiler.
 
-Fortunately, there is a static function `ComponentType.ReadWrite<T>()`. Let's replace the `new ComponentType(typeof(SampleComponent))` with it:
+Fortunately, there is a static function `ComponentType.ReadWrite<T>()`. Let's replace `new ComponentType(typeof(SampleComponent))` with it:
 
-<script src="https://gist.github.com/NagaChiang/b11b339e63f1060610eb4742408f352f.js"></script>
+```cs
+[AlwaysSynchronizeSystem]
+public class SampleSystem : JobComponentSystem
+{
+    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    {
+        EntityManager entityManager = EntityManager;
+        Entities.ForEach((Entity entity) =>
+        {
+            NativeArray<ComponentType> types = entityManager.GetComponentTypes(entity, Allocator.TempJob);
+            if (types.Contains(ComponentType.ReadWrite<SampleComponent>()))
+            {
+                Debug.Log("Found SampleComponent!");
+            }
+
+            types.Dispose();
+        }).Run();
+
+        return default;
+    }
+}
+```
 
 Actually, you can use `ComponentType.ReadOnly<T>()` if you like, and there is no difference between them, since the implementation of `IEquatable<T>.Equals()` in `ComponentType` only compares `TypeIndex`:
 
