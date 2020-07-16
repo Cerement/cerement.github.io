@@ -88,6 +88,8 @@ The format of the package `name` is `com.companyname.packagename`.
 
 The value in `version` field must follow [semantic versioning](https://semver.org/) with format `major.minor.patch`; otherwise, it will break the strategy that automation tools use to check the compatibility. `major` is for breaking changes, `minor` is for backward-compatible API changes, and `patch` is about fixes with no API changes. When `major` is 0, it indicates this package isn't stable for production, may includes many breaking changes frequently. The initial version of packages should be `0.1.0`.
 
+As packages for Unity, use label `preview` in `version` will let package manager know it’s in preview, e.g. `1.2.3-preview.1`, `1.2.3-preview.2`.
+
 Specify the dependencies of the package in the `dependencies` field. These referenced packages will be imported automatically when developers import this package. Please check out [npm documentation](https://docs.npmjs.com/files/package.json#dependencies) for detailed syntax about specifying version ranges, but not all the syntax are tested on Unity.
 
 Check out the [official documentation](https://docs.unity3d.com/Manual/upm-manifestPkg.html) of `package.json` for more details.
