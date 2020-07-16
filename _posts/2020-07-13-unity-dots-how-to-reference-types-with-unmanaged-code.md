@@ -21,7 +21,7 @@ Because `Type` and `typeof()` are managed code, which can't be compiled with Bur
 - Entities 0.11.1-preview.4
 - Burst 1.3.0-preview.12
 
-## Solution
+## Explanation
 
 Assuming we need to check if the entity has a particular component through the array from `EntityManager.GetComponentTypes()`. By looking at the constructor of `ComponentType`, there is only one version with a `Type` parameter, so just give it a try:
 
