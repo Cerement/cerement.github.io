@@ -1,5 +1,5 @@
 ---
-title: "Unity DOTS: How to Use EntityManager with Run() and Burst"
+title: "Unity DOTS: Using EntityManager with Run() and Burst"
 date: 2020-07-16T11:58:00+08:00
 excerpt: "EntityManager is a property of class ComponentSystemBase, which is not allowed with Burst. Assigning the EntityManager to a local variable can solve this problem."
 categories:

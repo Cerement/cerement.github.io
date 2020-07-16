@@ -1,5 +1,5 @@
 ---
-title: "Unity DOTS: How to Reference Types with Burst"
+title: "Unity DOTS: Referencing Types with Burst"
 date: 2020-07-14T11:24:00+08:00
 excerpt: "Because `Type` and `typeof()` are managed code, which can't be compiled with Burst, we need to use static function `ComponentType.ReadWrite<T>()` instead."
 categories:
