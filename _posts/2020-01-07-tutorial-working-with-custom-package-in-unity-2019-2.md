@@ -12,7 +12,7 @@ tags:
   - Git
 ---
 
-> Last Update: 2020/07/09
+> Last Update: 2020/07/24 (Unity 2020.1: packages grouped by author, documentation URL)
 
 ## Overview
 
@@ -77,9 +77,9 @@ Here is a sample `package.json` with recommended fields, please adapt this to yo
     "keyword3"
   ],
   "author": {
-    "name": "Unity",
-    "email": "unity@example.com",
-    "url": "https://www.unity3d.com"
+    "name": "My Company",
+    "email": "hello@example.com",
+    "url": "https://www.mycompany.com"
   }
 }
 ```
@@ -91,6 +91,10 @@ The value in `version` field must follow [semantic versioning](https://semver.or
 As packages for Unity, use label `preview` in `version` will let package manager know it’s in preview, e.g. `1.2.3-preview.1`, `1.2.3-preview.2`.
 
 Specify the dependencies of the package in the `dependencies` field. These referenced packages will be imported automatically when developers import this package. Please check out [npm documentation](https://docs.npmjs.com/files/package.json#dependencies) for detailed syntax about specifying version ranges, but not all the syntax are tested on Unity.
+
+In Unity 2020.1 and later, package manager groups packages by `author` `name`:
+
+![](../assets/images/2020-07-24-16-54-14.png)
 
 Check out the [official documentation](https://docs.unity3d.com/Manual/upm-manifestPkg.html) of `package.json` for more details.
 
@@ -195,6 +199,8 @@ In the detail penal of Package Manager, there are some links to documentation, c
   - `index.md` (case-insensitive)
   - `tableofcontents.md` (case-insensitive)
   - First found `*.md`
+
+  In Unity 2020.1 and later, next thing it will check is `documentationUrl` field in `package.json`, which can be a link to the online documentation.
 
 - Changelog
 
