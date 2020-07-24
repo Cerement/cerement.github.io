@@ -383,7 +383,7 @@ Instead of entering URL for every single command, we can also add `publishConfig
 
 ```json
 "publishConfig": {
-    "registry": "https://npm-registry.vive.com"
+    "registry": "https://registry.mycompany.com"
 }
 ```
 
