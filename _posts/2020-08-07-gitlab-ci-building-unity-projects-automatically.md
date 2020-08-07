@@ -1,5 +1,5 @@
 ---
-title: "Gitlab CI: Building Unity Projects Automatically"
+title: "Gitlab CI: Building Unity Projects Automatically with Docker"
 date: 2020-08-07T18:24:00+08:00
 excerpt: "This post is about the result of my research on Unity and Gitlab CI, showcasing a working example with Docker."
 categories:
