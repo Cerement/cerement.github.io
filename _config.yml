@@ -270,3 +270,9 @@ defaults:
       classes: wide
       author_profile: true
       breadcrumbs: false
+
+  # Google Search Console
+  - scope:
+      path: "/googled*.html"
+    values:
+      sitemap: false
