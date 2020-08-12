@@ -1,6 +1,7 @@
 ---
 title: "Tutorial: Working with Custom Packages in Unity"
 date: 2020-01-07T23:15:00+08:00
+last_modified_at: 2020-07-24T17:26:00+08:00
 excerpt: "Sharing common functionality and library between projects is always a problem when it comes to Unity projects. Now Unity provides the package manager like npm or those in other fields. This tutorial will guide you creating, developing and sharing custom packages in Unity."
 categories:
   - Unity
