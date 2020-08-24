@@ -1,6 +1,7 @@
 ---
 title: "Unity DOTS: Creating Generic Systems with Generic Jobs"
 date: 2020-08-14T14:47:00+08:00
+last_modified_at: 2020-08-24T18:06:00+08:00
 excerpt: "Generic systems can update multiple types of components with the same logic. Since generic parameters are not supported in `Entities.ForEach()`, we must use `IJobChunk` to implement generic systems."
 categories:
 - Unity
@@ -222,11 +223,10 @@ public class GenericPrintSystem<T> : JobComponentSystem
 ### Generic Print Job
 
 ```cs
-[BurstCompatible]
 public struct GenericPrintJob<T> : IJobChunk
     where T : struct, IComponentData, IData
 {
-    [ReadOnly] ublic ComponentTypeHandle<T> GenericType;
+    [ReadOnly] public ComponentTypeHandle<T> GenericType;
 
     public void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
     {
@@ -268,3 +268,9 @@ public struct ValueComponent : IComponentData, IData
     }
 }
 ```
+
+## Restriction
+
+According to the [Burst documentation](https://docs.unity3d.com/Packages/com.unity.burst@1.4/manual/docs/OptimizationGuidelines.html#generic-jobs), Burst has limited support for generics. The Burst compiler can only detect generic jobs with fully resolved generic arguments, such as `GenericPrintJob<ValueComponent>`, while `GenericPrintJob<T>` won't be detected.
+
+(Thanks to [@BennetJeutter](https://twitter.com/BennetJeutter) for pointing out this restriction.)
