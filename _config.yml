@@ -276,6 +276,6 @@ defaults:
 
   # Google Search Console
   - scope:
-      path: "/googled*.html"
+      path: "/googled5282be3594e773c.html"
     values:
       sitemap: false
