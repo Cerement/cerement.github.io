@@ -260,7 +260,7 @@ defaults:
       share: false
       related: false
       breadcrumbs: true
-      toc: true
+      toc: false
       toc_label: "Table of Contents"
       toc_sticky: true
 
