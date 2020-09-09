@@ -71,8 +71,8 @@ Here is a sample `package.json` with recommended fields, please adapt this to yo
   "dependencies": {
     "com.unity.some-package": "1.0.0",
     "com.unity.other-package": "2.0.0"
- },
- "keywords": [
+  },
+  "keywords": [
     "keyword1",
     "keyword2",
     "keyword3"
