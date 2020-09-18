@@ -1,7 +1,6 @@
 ---
 title: "Unity DOTS: Creating Generic Systems with Generic Jobs"
 date: 2020-08-14T14:47:00+08:00
-last_modified_at: 2020-08-24T18:06:00+08:00
 excerpt: "Generic systems can update multiple types of components with the same logic. Since generic parameters are not supported in `Entities.ForEach()`, we must use `IJobChunk` to implement generic systems."
 categories:
 - Unity
