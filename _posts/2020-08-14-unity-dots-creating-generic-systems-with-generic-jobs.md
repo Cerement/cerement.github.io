@@ -68,32 +68,33 @@ Instead, we have to create a generic job implementing `IJobChunk`.
 ### Creating Generic Job
 
 ```cs
-[BurstCompatible]
-public struct GenericPrintJob<T> : IJobChunk
+public class GenericPrintSystem<T> : JobComponentSystem
 {
-    [ReadOnly] public ComponentTypeHandle<T> GenericType;
-
-    public void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
+    private struct GenericPrintJob : IJobChunk
     {
-        NativeArray<T> generics = chunk.GetNativeArray(GenericType);
-        for (int i = 0; i < generics.Length; i++)
+        [ReadOnly] public ComponentTypeHandle<T> GenericType;
+
+        public void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
         {
-        
+            NativeArray<T> generics = chunk.GetNativeArray(GenericType);
+            for (int i = 0; i < generics.Length; i++)
+            {
+                
+            }
         }
     }
-}
 ```
 
 And the console will complain:
 
 ```
-Assets\Scripts\GenericPrintJob.cs(13,21): error CS0453: The type 'T' must be a non-nullable value type in order to use it as parameter 'T' in the generic type or method 'NativeArray<T>'
+error CS0453: The type 'T' must be a non-nullable value type in order to use it as parameter 'T' in the generic type or method 'NativeArray<T>'
 ```
 
 In this case, we need `struct` and `IComponentData` type constraints to call `GetNativeArray()`.
 
 ```cs
-public struct GenericPrintJob<T> : IJobChunk
+private struct GenericPrintJob<T> : IJobChunk
     where T : struct, IComponentData
 {
 ```
@@ -114,7 +115,7 @@ public interface IData
 And add this interface to the type constraints:
 
 ```cs
-public struct GenericPrintJob<T> : IJobChunk
+public class GenericPrintSystem<T> : JobComponentSystem
     where T : struct, IComponentData, IData
 {
 ```
@@ -163,21 +164,13 @@ With the generic job, we can schedule this job in the generic system.
 
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
-        GenericPrintJob<T> job = new GenericPrintJob<T>
+        GenericPrintJob job = new GenericPrintJob
         {
             GenericType = GetComponentTypeHandle<T>(true),
         };
         
         return job.Schedule(GenericQuery, inputDeps);
     }
-```
-
-Make sure the type constraints are added to the system as well.
-
-```cs
-public class GenericPrintSystem<T> : JobComponentSystem
-    where T : unmanaged, IComponentData, IData
-{
 ```
 
 ### Inheriting Generic System
@@ -200,6 +193,20 @@ This example demonstrates a generic system, `GenericPrintSystem`, which is capab
 public class GenericPrintSystem<T> : JobComponentSystem
     where T : struct, IComponentData, IData
 {
+    private struct GenericPrintJob : IJobChunk
+    {
+        [ReadOnly] public ComponentTypeHandle<T> GenericType;
+
+        public void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
+        {
+            NativeArray<T> generics = chunk.GetNativeArray(GenericType);
+            for (int i = 0; i < generics.Length; i++)
+            {
+                Debug.Log(generics[i].GetValue());
+            }
+        }
+    }
+
     private EntityQuery GenericQuery;
 
     protected override void OnCreate()
@@ -209,31 +216,12 @@ public class GenericPrintSystem<T> : JobComponentSystem
 
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
-        GenericPrintJob<T> job = new GenericPrintJob<T>
+        GenericPrintJob job = new GenericPrintJob
         {
             GenericType = GetComponentTypeHandle<T>(true),
         };
 
         return job.Schedule(GenericQuery, inputDeps);
-    }
-}
-```
-
-### Generic Print Job
-
-```cs
-public struct GenericPrintJob<T> : IJobChunk
-    where T : struct, IComponentData, IData
-{
-    [ReadOnly] public ComponentTypeHandle<T> GenericType;
-
-    public void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
-    {
-        NativeArray<T> generics = chunk.GetNativeArray(GenericType);
-        for (int i = 0; i < generics.Length; i++)
-        {
-            Debug.Log(generics[i].GetValue());
-        }
     }
 }
 ```
@@ -270,6 +258,6 @@ public struct ValueComponent : IComponentData, IData
 
 ## Restriction
 
-According to the [Burst documentation](https://docs.unity3d.com/Packages/com.unity.burst@1.4/manual/docs/OptimizationGuidelines.html#generic-jobs), Burst has limited support for generics. The Burst compiler can only detect generic jobs with fully resolved generic arguments, such as `GenericPrintJob<ValueComponent>`, while `GenericPrintJob<T>` won't be detected.
+According to the [Burst documentation](https://docs.unity3d.com/Packages/com.unity.burst@1.4/manual/docs/OptimizationGuidelines.html#generic-jobs), Burst has limited support for generics. The Burst compiler can only detect generic jobs with fully resolved generic arguments, such as `MyJob<int>` and `MySystem<float>.MyJob`, while `MySystem<T>.MyJob<U>` won't be detected.
 
 (Thanks to [@BennetJeutter](https://twitter.com/BennetJeutter) for pointing out this restriction.)
