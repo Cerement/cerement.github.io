@@ -191,5 +191,5 @@ void AddToDestroyList(Chunk* chunk, int indexInChunk, int batchCount, int inputD
 
 ## Reference
 
-- [TransformSystem | Entities | 0.16.0-preview.21](https://docs.unity3d.com/Packages/com.unity.entities@0.16/manual/transform_system.html)
-- [Struct LinkedEntityGroup | Entities | 0.16.0-preview.21](https://docs.unity3d.com/Packages/com.unity.entities@0.16/api/Unity.Entities.LinkedEntityGroup.html)
+- [TransformSystem \| Entities \| 0.16.0-preview.21](https://docs.unity3d.com/Packages/com.unity.entities@0.16/manual/transform_system.html)
+- [Struct LinkedEntityGroup \| Entities \| 0.16.0-preview.21](https://docs.unity3d.com/Packages/com.unity.entities@0.16/api/Unity.Entities.LinkedEntityGroup.html)
