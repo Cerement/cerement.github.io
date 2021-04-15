@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 permalink: /projects/
-date: 2021-01-13T15:03:00+08:00
+date: 2021-04-15T10:16:00+08:00
 ---
 
 ## Active
@@ -13,20 +13,20 @@ date: 2021-01-13T15:03:00+08:00
 ### 2020
 
 - [Entity Tween](https://github.com/NagaChiang/entity-tween) `(Library, C#, Unity, DOTS, ECS, Burst)`
-- [Tiny Rogue](https://nagachiang.github.io/tiny-rogue/) `(Game, C#, Unity, DOTS, ECS, Burst, Project Tiny)`
 
 ## Archived
 
 ### 2020
 - [Shifting Grounds (prototype)](https://github.com/NagaChiang/nagachiang.github.io/blob/master/projects/ShiftingGrounds.7z?raw=true) `(Game, C#, Unity, DOTS, ECS, Burst)`
 - [Vue Tic-Tac-Toe](https://nagachiang.github.io/vue-tic-tac-toe/) `(Game, TypeScript, Vue.js)`
+- [Tiny Rogue](https://nagachiang.github.io/tiny-rogue/) `(Game, C#, Unity, DOTS, ECS, Burst, Project Tiny)`
 
 ### 2019
 - [BSP Dungeon Generation with Unity ECS](https://github.com/NagaChiang/unity-ecs-bsp-dungeon-generation) `(PCG, C#, Unity, ECS)`
 - [Flickr Downloader CLI](https://github.com/NagaChiang/flickr-downloader-cli) `(Tool, JavaScript, Node.js)`
 
 ### 2017
-- [Voxel Explosion Effect](https://www.youtube.com/watch?v=sjSDXTIYbXg) `(Graphics, C#, Unity)`
+- [Voxel Explosion Effect](https://www.youtube.com/watch?v=sjSDXTIYbXg) `(FX, C#, Unity)`
 
 ### 2016
 - [Through Galaxies](https://nagachiang.itch.io/through-galaxies) `(Game, C#, Unity, PHP, PostgreSQL, Heroku)`
