@@ -12,7 +12,7 @@ locale                   : "en"
 title                    : "Timespawn"
 title_separator          : "-"
 name                     : "Naga Chiang"
-description              : "Naga Chiang's game development blog, using Unity and UE4."
+description              : "Naga Chiang's game development blog."
 url                      : "https://nagachiang.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "nagachiang/nagachiang.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -90,7 +90,7 @@ analytics:
 author:
   name             : "Naga Chiang"
   avatar           : "/assets/images/slime.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Game developer using Unity and UE4. A bold dungeon crawler."
+  bio              : "Game Developer / Dungeon Crawler"
   location         : "Taiwan"
   email            : "nagachiangdev@gmail.com"
   uri              : 
