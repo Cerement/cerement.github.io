@@ -1,14 +1,14 @@
 ---
 title: "Projects"
 permalink: /projects/
-date: 2021-04-15T10:16:00+08:00
+date: 2021-05-07T05:59:00+08:00
 ---
 
 ## Active
 
 ### 2021
 
-- [Click Charger](https://github.com/NagaChiang/click-charger) `(Game, Dart, Flutter)`
+- [Click Charger](https://github.com/NagaChiang/click-charger) `(Game, Dart, Flutter, Android, Firebase, Google Play)`
 
 ### 2020
 
