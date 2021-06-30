@@ -8,7 +8,7 @@ date: 2021-05-07T05:59:00+08:00
 
 ### 2021
 
-- [Click Charger](https://github.com/NagaChiang/click-charger) `(Game, Dart, Flutter, Android, Firebase, Google Play, AdMob, IAP)`
+- [Click Charger](https://github.com/NagaChiang/click-charger) `(Game, Dart, Flutter, Android, GCP, Firebase, Google Play)`
 
 ### 2020
 
