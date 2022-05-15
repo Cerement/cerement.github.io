@@ -1,27 +1,19 @@
 ---
 title: "Projects"
 permalink: /projects/
-date: 2021-10-09T10:54:00+08:00
+date: 2022-05-15T16:38:00+08:00
 ---
-
-## Active
-
-### 2021
-
-- [Click Charger](https://github.com/NagaChiang/click-charger) `(Game, Dart, Flutter, Android, GCP, Firebase, Google Play)`
-
-### 2020
-
-- [Entity Tween](https://github.com/NagaChiang/entity-tween) `(Library, C#, Unity, DOTS, ECS, Burst)`
 
 ## Archived
 
 ### 2021
 
+- [Click Charger](https://github.com/NagaChiang/click-charger) `(Game, Dart, Flutter, Android, GCP, Firebase, Google Play)`
 - [Android Image Browser](https://github.com/NagaChiang/android-image-browser) `(App, Kotlin, Android)`
 
 ### 2020
 
+- [Entity Tween](https://github.com/NagaChiang/entity-tween) `(Library, C#, Unity, DOTS, ECS, Burst)`
 - [Shifting Grounds (prototype)](https://github.com/NagaChiang/nagachiang.github.io/blob/master/projects/ShiftingGrounds.7z?raw=true) `(Game, C#, Unity, DOTS, ECS, Burst)`
 - [Vue Tic-Tac-Toe](https://nagachiang.github.io/vue-tic-tac-toe/) `(Game, TypeScript, Vue.js)`
 - [Tiny Rogue](https://nagachiang.github.io/tiny-rogue/) `(Game, C#, Unity, DOTS, ECS, Burst, Project Tiny)`
