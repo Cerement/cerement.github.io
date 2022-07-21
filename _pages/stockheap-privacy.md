@@ -1,5 +1,5 @@
 ---
-title: "Privacy Policy for 股積 Stockheap"
+title: "Privacy Policy"
 permalink: /stockheap-privacy/
 date: 2022-07-21T23:47:00+08:00
 ---

@@ -275,7 +275,7 @@ defaults:
       layout: single
       classes: wide
       author_profile: true
-      breadcrumbs: false
+      breadcrumbs: true
 
   # Google Search Console
   - scope:

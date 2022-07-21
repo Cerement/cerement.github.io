@@ -1,5 +1,5 @@
 ---
-title: "Privacy Policy for Click Charger"
+title: "Privacy Policy"
 permalink: /click-charger-privacy-policy/
 date: 2021-04-15T11:32:00+08:00
 ---
