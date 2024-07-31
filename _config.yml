@@ -75,7 +75,6 @@ social:
   links                  : # An array of links to social media profiles
                           - "https://www.linkedin.com/in/chchiangnaga"
                           - "https://twitter.com/nagachiang"
-                          - "https://www.facebook.com/NagaGameDev"
                           - "https://github.com/NagaChiang"
                           - "https://gitlab.com/NagaChiang"
 
@@ -90,7 +89,7 @@ analytics:
 author:
   name             : "Naga Chiang"
   avatar           : "/assets/images/slime.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Game Developer / Dungeon Crawler"
+  bio              : "Game Developer and dungeon crawler."
   location         : "Taiwan"
   email            : "nagachiangdev@gmail.com"
   uri              : 
@@ -98,7 +97,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "NagaGameDev"
+  facebook         : 
   foursquare       :
   github           : "nagachiang"
   gitlab           : 
@@ -116,7 +115,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : https://www.youtube.com/@TimespawnGames
 
 
 # Reading Files
